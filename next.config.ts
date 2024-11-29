@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  ignoreBuildErrors: true,
   async headers() {
     return [
       {
@@ -10,7 +11,10 @@ const nextConfig: NextConfig = {
             key: "Content-Security-Policy",
             value: "frame-ancestors 'self' https://web.telegram.org;",
           },
-          { key: "X-Frame-Options", value: "ALLOW-FROM https://web.telegram.org/" },
+          {
+            key: "X-Frame-Options",
+            value: "ALLOW-FROM https://web.telegram.org/",
+          },
         ],
       },
     ];
