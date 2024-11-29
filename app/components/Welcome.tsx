@@ -25,7 +25,7 @@ const Welcome = () => {
           const tg = window.Telegram.WebApp;
           tg?.ready();
         }
-      }, []);
+      }, []);   
   
     if (!isClient) return null; // Avoid rendering on the server
   
