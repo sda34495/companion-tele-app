@@ -22,10 +22,14 @@ const Welcome = () => {
     useEffect(() => {
         setIsClient(true); // Ensures this code only runs on the client
         if (window?.Telegram?.WebApp) {
+          console.log('Telegram WebApp SDK is loaded');
           const tg = window.Telegram.WebApp;
-          tg?.ready();
+          tg.ready();
+        } else {
+          console.log('Telegram WebApp SDK is not loaded');
         }
-      }, []);   
+      }, []);
+      
   
     if (!isClient) return null; // Avoid rendering on the server
   
