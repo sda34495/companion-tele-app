@@ -1,18 +1,31 @@
 'use client'
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
-
+// global.d.ts
+interface TelegramWebApp {
+    ready(): void;
+    // Add any other methods or properties you might need
+  }
+  
+  declare global {
+    interface Window {
+      Telegram?: {
+        WebApp: TelegramWebApp;
+      };
+    }
+  }
+  
 
 const Welcome = () => {
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
-      setIsClient(true); // Ensures this code only runs on the client
-      if (window?.Telegram?.WebApp) {
-        const tg = window?.Telegram?.WebApp;
-        tg?.ready();
-      }
-    }, []);
+        setIsClient(true); // Ensures this code only runs on the client
+        if (window?.Telegram?.WebApp) {
+          const tg = window.Telegram.WebApp;
+          tg?.ready();
+        }
+      }, []);
   
     if (!isClient) return null; // Avoid rendering on the server
   
