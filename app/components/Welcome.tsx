@@ -8,9 +8,9 @@ const Welcome = () => {
 
     useEffect(() => {
       setIsClient(true); // Ensures this code only runs on the client
-      if (window.Telegram?.WebApp) {
-        const tg = window.Telegram.WebApp;
-        tg.ready();
+      if (window?.Telegram?.WebApp) {
+        const tg = window?.Telegram?.WebApp;
+        tg?.ready();
       }
     }, []);
   
