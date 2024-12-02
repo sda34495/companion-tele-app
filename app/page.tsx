@@ -1,8 +1,23 @@
-import Image from "next/image";
-import Welcome from "./components/Welcome";
+
+import Homepage from "./components/Homepage";
+import LoadingScreen from "./components/LoadingScreen";
+import ResetChat from "./components/ResetChat";
+
+
+
+
+
 
 export default function Home() {
   return (
-    <Welcome />
+    
+    <>
+    {/* <Homepage/> */}
+    {/* <ResetChat/> */}
+    <LoadingScreen/>
+
+  
+    </>
+
   )
 }
