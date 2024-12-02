@@ -12,9 +12,9 @@ export default function Home() {
   return (
     
     <>
-    {/* <Homepage/> */}
+    <Homepage/>
     {/* <ResetChat/> */}
-    <LoadingScreen/>
+    {/* <LoadingScreen/> */}
 
   
     </>
