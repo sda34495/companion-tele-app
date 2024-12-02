@@ -4,7 +4,7 @@ import React from "react";
 const Explore: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen ">
-      <div className="bg-[#efeff3] w-full max-w-xs mx-auto rounded-t-2xl flex-grow">
+      <div className="bg-[#efeff3] w-full sm:max-w-xs mx-auto rounded-t-2xl flex-grow">
         <div className=" bg-white flex flex-row justify-between rounded-t-2xl items-center">
           <div className="px-3  py-2 flex flex-row">
             <svg

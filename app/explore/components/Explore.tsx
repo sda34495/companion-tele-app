@@ -3,7 +3,7 @@ import React from "react";
 const Explore: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="bg-white w-full max-w-xs mx-auto flex-grow  rounded-2xl">
+      <div className="bg-white w-full sm:max-w-xs mx-auto flex-grow  rounded-2xl">
         <div className="flex flex-row justify-between items-center">
           <div className="px-3  py-2 flex flex-row">
             <svg
@@ -47,14 +47,16 @@ const Explore: React.FC = () => {
                 Characters
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 sm:px-0 px-3 gap-4">
               {/* Example Card */}
               {Array.from({ length: 6 }).map((_, index) => (
                 <div
                   key={index}
                   className=" relative bg-white shadow-md rounded-lg overflow-hidden"
                 >
+                  <a href="./detail">
                   <img
+                   
                     src="./Albert_Einstein.jpg" // Replace with actual image
                     alt="Character"
                     className="w-full rounded-lg h-40 "
@@ -68,6 +70,7 @@ const Explore: React.FC = () => {
                       This is a short description for the AI character.
                     </p>
                   </div>
+                    </a>
                 </div>
               ))}
             </div>

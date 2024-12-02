@@ -4,7 +4,7 @@ import React from "react";
 const CloudChat: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen ">
-    <div className="bg-[#efeff3]  w-full mx-auto rounded-t-2xl max-w-xs  flex-grow">
+    <div className="bg-[#efeff3]  w-full mx-auto rounded-t-2xl sm:max-w-xs  flex-grow">
     <div className=" bg-white rounded-t-2xl flex flex-row justify-between items-center">
           <button className="text-[#007cff] px-3 py-2 mt-1 font-semibold ">Close</button>
           <div className="flex flex-col items-center text-center px-3 py-2">
