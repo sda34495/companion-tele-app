@@ -114,7 +114,7 @@ const Settings: React.FC = () => {
           <h3 className="text-xs text-gray-500 font-medium mb-2">
             HELP & LEGAL
           </h3>
-          <div className="divide-y divide-gray-200 border border-gray-200 rounded-lg bg-white">
+          <div className="divide-y divide-gray-200 border border-gray-200 rounded-lg bg-white mb-10">
             <button className="flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-left text-gray-900">
               Imprint
               <svg
@@ -188,7 +188,7 @@ const Settings: React.FC = () => {
 
         {/* Affiliate Button */}
         <div className="mt-6 ">
-          <button className="w-full bg-[#007cff] absolute bottom-0 left-0 right-0 text-white py-3 rounded-lg text-sm font-medium">
+          <button className="w-3/4 mx-auto  bg-[#007cff] absolute bottom-3 right-0 left-0 text-white py-3  rounded-lg text-sm font-semibold">
             Become an Affiliate
           </button>
         </div>
