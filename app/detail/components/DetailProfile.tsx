@@ -9,16 +9,16 @@ const Detail: React.FC = () => {
         
         
 
-        <img src="./Albert_Einstein.jpg" alt={""} className="w-full" />
+        <Image src={bgImage} alt={"bg-image"} className="w-full" />
         <div className="bg-[#efeff3] w-full  p-6 ">
           <div className="flex flex-col items-center">
             {/* Icon Placeholder */}
             <div className="text-center mb-10">
               <div className="w-16 h-16 overflow-hidden rounded-2xl mx-auto ">
-                <img src="./Albert_Einstein.jpg" alt={""} className="w-full" />
+                <Image src={bgImage} alt={"Ai character image"} className="w-full" />
               </div>
               <h2 className="text-lg font-bold text-black">Albert</h2>
-              <p className="text-gray-500 tracking-tight px-6 text-xs">
+              <p className="text-gray-500 px-6 text-sm">
                 This is a short description for the AI character
               </p>
             </div>
