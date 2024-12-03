@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
               Cloud Companions
             </h2>
             {/* Subtitle */}
-            <p className="text-sm text-[#787878] tracking-tight px-4 text-center mb-6">
+            <p className="text-sm text-[#787878] px-4 text-center mb-6">
               With Cloud Companions you can explore and chat with AI Characters
             </p>
             {/* Buttons */}
