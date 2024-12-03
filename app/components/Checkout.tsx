@@ -2,12 +2,13 @@
 import Image from 'next/image';
 import React from 'react';
 import hearts from '@/public/hearts.svg'
+import Link from 'next/link';
 
 const PaymentScreen: React.FC = () => {
   return (
     <div className="bg-[#efeff3] relative w-full sm:max-w-xs mx-auto flex-grow  py-6 px-4">
       {/* Card Section */}
-      <div className="bg-white w-full rounded-lg shadow-md p-4  space-y-4">
+      <div className="bg-white w-full rounded-lg  p-4  space-y-4">
         {/* Header */}
         <div className="flex items-center justify-between">
           <div className="w-full h-full rounded-lg flex items-center justify-center">
@@ -66,9 +67,11 @@ const PaymentScreen: React.FC = () => {
       </div>
 
       {/* Explore Button */}
+      <Link href='./explore'>
       <button className="w-3/4 mx-auto  bg-[#007cff] absolute bottom-3 right-0 left-0 text-white py-3  rounded-lg text-sm font-semibold ">
         Explore AI Characters
       </button>
+      </Link>
     </div>
   );
 };

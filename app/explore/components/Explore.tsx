@@ -1,8 +1,10 @@
+import Image from "next/image";
 import React from "react";
+import EinstineImage from '@/public/Albert_Einstein.jpg'
 
 const Explore: React.FC = () => {
   return (
-      <div className="bg-[#efeff3] w-full sm:max-w-xs mx-auto flex-grow  rounded-2xl">
+      <div className="bg-[#efeff3] w-full sm:max-w-xs mx-auto flex-grow  ">
         <div className="flex flex-row justify-between items-center">
           
 
@@ -30,11 +32,12 @@ const Explore: React.FC = () => {
                   className=" relative bg-white shadow-md rounded-lg overflow-hidden"
                 >
                   <a href="./detail">
-                  <img
+                  <Image
                    
-                    src="./Albert_Einstein.jpg" // Replace with actual image
+                    src={EinstineImage}
                     alt="Character"
                     className="w-full rounded-lg h-40 object-fill "
+                    priority
                   />
                   <div className="">
                     <div className="absolute px-3 top-28">

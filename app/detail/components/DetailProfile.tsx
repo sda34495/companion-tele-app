@@ -5,12 +5,12 @@ import bgImage from "@/public/Albert_Einstein.jpg";
 
 const Detail: React.FC = () => {
   return (
-      <div className="bg-[#efeff3] w-full sm:max-w-xs mx-auto flex-grow rounded-t-2xl">
+      <div className="bg-[#efeff3] w-full sm:max-w-xs mx-auto flex-grow">
         
         
 
         <Image src={bgImage} alt={"bg-image"} className="w-full" />
-        <div className="bg-[#efeff3] w-full  p-6 ">
+        <div className="bg-[#efeff3] w-full  py-6 px-4 ">
           <div className="flex flex-col items-center">
             {/* Icon Placeholder */}
             <div className="text-center mb-10">

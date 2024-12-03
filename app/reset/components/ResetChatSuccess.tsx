@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import React from "react";
 
 const ResetChatSuccess: React.FC = () => {
@@ -28,9 +29,11 @@ const ResetChatSuccess: React.FC = () => {
             Open Chat
             </button>
 
+            <Link href='./explore'>
             <button className="w-3/4 mx-auto absolute bottom-5 right-0 left-0 bg-white text-black py-4 rounded-lg text-sm font-semibold  ">
             Explore more AI Characters
             </button>
+            </Link>
         </div>
       </div>
   );
