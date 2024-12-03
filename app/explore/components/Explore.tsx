@@ -17,7 +17,7 @@ const Explore: React.FC = () => {
               <h2 className="text-2xl font-bold mt-2 text-black">
                 Explore Characters
               </h2>
-              <p className="text-gray-500 tracking-tight px-4 text-sm">
+              <p className="text-gray-500  px-4 text-sm">
                 With Cloud Companions you can explore and chat with AI
                 Characters
               </p>
