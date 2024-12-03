@@ -24,11 +24,11 @@ const ResetChatSuccess: React.FC = () => {
         
                    
           </div>
-            <button className="w-full bg-[#007cff] absolute bottom-10 right-0 left-0 text-white py-2 rounded-lg text-sm font-semibold ">
+            <button className="w-3/4 mx-auto bg-[#007cff] absolute bottom-20 right-0 left-0 text-white py-4 rounded-lg text-sm font-semibold  ">
             Open Chat
             </button>
 
-            <button className="w-full absolute bottom-0 right-0 left-0 bg-white text-black py-2 rounded-lg text-sm font-semibold ">
+            <button className="w-3/4 mx-auto absolute bottom-5 right-0 left-0 bg-white text-black py-4 rounded-lg text-sm font-semibold  ">
             Explore more AI Characters
             </button>
         </div>

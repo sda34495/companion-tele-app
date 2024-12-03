@@ -37,7 +37,10 @@ const HomePage: React.FC = () => {
                   />
                 </svg>
               </button>
+              <hr />
             </Link>
+
+            <Link href='./payment'>
             <button className="flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-left text-gray-900">
               Purchase Hearts
               <svg
@@ -47,15 +50,16 @@ const HomePage: React.FC = () => {
                 strokeWidth="1.5"
                 stroke="currentColor"
                 className="size-5 text-[#787878]"
-              >
+                >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                />
+                  />
               </svg>
               
             </button>
+                  </Link>
             <hr />
             <Link href="./reset">
               <button className="flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-left text-gray-900">
@@ -83,7 +87,7 @@ const HomePage: React.FC = () => {
         </div>
 
         <Link href="./explore">
-          <button className="w-full  bg-[#007cff] absolute bottom-0 right-0 left-0 text-white py-3  rounded-lg text-sm font-semibold ">
+          <button className="w-3/4 mx-auto  bg-[#007cff] absolute bottom-3 right-0 left-0 text-white py-3  rounded-lg text-sm font-semibold ">
             Explore AI Characters
           </button>
         </Link>
