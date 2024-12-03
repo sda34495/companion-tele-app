@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import bgImage from "@/public/Albert_Einstein.jpg";
+import Link from "next/link";
 
 const Detail: React.FC = () => {
   return (
@@ -74,8 +75,9 @@ const Detail: React.FC = () => {
             </button>
 
             <button className="w-full bg-white text-black py-2 rounded-lg text-sm font-semibold mt-2">
-              <a href="./explore">Back to all Characters</a>
-            
+            <Link href="./explore">
+             Back to all Characters            
+            </Link>
             </button>
 
 
