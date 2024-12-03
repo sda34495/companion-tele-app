@@ -3,20 +3,11 @@ import React from "react";
 
 const CloudChat: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center min-h-screen  ">
-      <div className="bg-[#efeff3]  w-full mx-auto rounded-t-2xl sm:max-w-xs  flex-grow">
-        <div className=" bg-white rounded-t-2xl flex flex-row justify-between items-center">
-        <button className="text-[#007cff] px-3 py-2 mt-1 font-semibold ">Close</button>
-          <div className="flex flex-col items-center text-center px-3 py-2">
-            <h1 className="text-black font-bold tracking-tight">Cloud Chat</h1>
-            <p className="-mt-1 text-xs text-[#787878]">mini app</p>
-          </div>
-          <button className="px-3 py-2">
-          <img src="./threedots.svg"  />
-          </button>
-        </div>
+
+      <div className="bg-[#efeff3] relative  w-full mx-auto rounded-t-2xl sm:max-w-xs  flex-grow">
+        
         <div className="bg-[#efeff3] w-full  p-6 ">
-          <div className="flex flex-col items-center">
+          <div className="flex absolute top-36 right-0 left-0 flex-col px-2 items-center">
             {/* Icon Placeholder */}
             <div className="w-14 h-14 bg-[#00b0ff] rounded-2xl mb-4 mt-10"></div>
             {/* Title */}
@@ -85,15 +76,18 @@ const CloudChat: React.FC = () => {
 
             {/* Bottom Button */}
             
-            <button   className="w-full  bg-[#007cff] text-white py-3 rounded-lg text-sm font-semibold mt-6">
+          </div>
+         
+
+            <button   className="w-full  bg-[#007cff] absolute bottom-0 right-0 left-0 text-white py-3  rounded-lg text-sm font-semibold ">
               <a href="./explore">
               Explore AI Characters
               </a>
             </button>
-          </div>
+      
         </div>
       </div>
-    </div>
+
   );
 };
 

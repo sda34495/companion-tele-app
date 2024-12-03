@@ -13,8 +13,8 @@ export default function Home() {
     
     <>
     <Homepage/>
-    <ResetChat/>
-    <LoadingScreen/>
+    {/* <ResetChat/> */}
+    {/* <LoadingScreen/> */}
 
   
     </>

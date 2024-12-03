@@ -2,21 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global CSS variables and styles */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg-secondary: #f9f9f9; /* Replace with actual value */
+  --color-text: #333333;
+  --family: Arial, Helvetica, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-bg-secondary: #121212; /* Dark mode background */
+    --color-text: #ededed;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  @apply bg-black
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-bg-secondary);
+  font-family: var(--family);
+
+  /* Smoothing and text optimizations */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+  min-height: 100%;
+  width: 100%;
+
+  @media (min-width: 460px) {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+}
+
+.app {
+  color: var(--color-text);
+  position: relative;
+  user-select: none;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.default-segue-enter-active {
+  transition: opacity 500ms ease;
+  will-change: opacity;
+}
+
+.default-segue-enter-from,
+.default-segue-leave-to {
+  opacity: 0;
+}
+
+.default-segue-leave-active {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
 }
