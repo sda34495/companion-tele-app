@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import React from "react";
 
 const HomePage: React.FC = () => {
@@ -20,6 +21,7 @@ const HomePage: React.FC = () => {
             </p>
             {/* Buttons */}
             <div className="divide-y divide-gray-200 border border-gray-200 rounded-lg w-full bg-white">
+              <Link href='./setting'>
               <button className="flex items-center justify-between w-full px-4 py-1.5 text-left text-black text-sm font-medium">
                 Personal Settings
                 <svg
@@ -29,14 +31,15 @@ const HomePage: React.FC = () => {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   className="size-5 text-[#787878]"
-                >
+                  >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  />
+                    />
                 </svg>
               </button>
+                    </Link>
               <button className="flex items-center justify-between w-full px-4 py-1.5 text-left text-black text-sm font-medium">
                 Purchase Hearts
                 <svg
@@ -54,6 +57,7 @@ const HomePage: React.FC = () => {
                   />
                 </svg>
               </button>
+              <Link href='./reset'>
               <button className="flex items-center justify-between w-full px-4 py-1.5 text-left text-black text-sm font-medium">
                 Reset Chat
                 <svg
@@ -63,14 +67,15 @@ const HomePage: React.FC = () => {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   className="size-5 text-[#787878]"
-                >
+                  >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  />
+                    />
                 </svg>
               </button>
+                    </Link>
             </div>
             <hr className=" border-gray-300 w-full mt-4 " />
 
@@ -79,11 +84,11 @@ const HomePage: React.FC = () => {
           </div>
          
 
+              <Link href="./explore">
             <button   className="w-full  bg-[#007cff] absolute bottom-0 right-0 left-0 text-white py-3  rounded-lg text-sm font-semibold ">
-              <a href="./explore">
               Explore AI Characters
-              </a>
             </button>
+              </Link>
       
         </div>
       </div>

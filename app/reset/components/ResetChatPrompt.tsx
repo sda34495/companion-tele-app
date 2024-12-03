@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import React from "react";
 
 const ResetChatPrompt: React.FC = () => {
@@ -24,9 +25,11 @@ const ResetChatPrompt: React.FC = () => {
         
                    
           </div>
+          <Link href='./success'>
             <button className="w-full bg-[#007cff] absolute bottom-10 right-0 left-0 text-white py-2 rounded-lg text-sm font-semibold ">
             Yes, delete chat memory
             </button>
+          </Link>
 
             <button className="w-full absolute bottom-0 right-0 left-0 bg-white text-black py-2 rounded-lg text-sm font-semibold ">
            No, go back

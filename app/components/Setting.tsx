@@ -15,7 +15,8 @@ const Setting: React.FC = () => {
             {/* Icon Placeholder */}
             <div className="text-center mb-10">
               <div className="w-16 h-16 overflow-hidden rounded-2xl mx-auto ">
-                <img src="./Albert_Einstein.jpg" alt={""} className="w-full" />
+              <Image src={bgImage} alt="Albert Einstein" className="w-full" />
+
               </div>
               <h2 className="text-lg font-bold text-black">Albert</h2>
               <p className="text-gray-500 tracking-tight px-6 text-xs">
