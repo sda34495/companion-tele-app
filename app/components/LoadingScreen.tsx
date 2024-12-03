@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 
-const CloudChat: React.FC = () => {
+const LoadingScreen: React.FC = () => {
   return (
     <div className="bg-[#efeff3] relative  w-full mx-auto rounded-t-2xl sm:max-w-xs  flex-grow">
 
@@ -83,4 +83,4 @@ const CloudChat: React.FC = () => {
   );
 };
 
-export default CloudChat;
+export default LoadingScreen;

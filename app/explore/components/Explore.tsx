@@ -22,7 +22,7 @@ const Explore: React.FC = () => {
                 Characters
               </p>
             </div>
-            <div className="grid grid-cols-2 sm:px-0 px-3 gap-4">
+            <div className="grid grid-cols-2  gap-4">
               {/* Example Card */}
               {Array.from({ length: 6 }).map((_, index) => (
                 <div
@@ -34,11 +34,11 @@ const Explore: React.FC = () => {
                    
                     src="./Albert_Einstein.jpg" // Replace with actual image
                     alt="Character"
-                    className="w-full rounded-lg h-40 "
+                    className="w-full rounded-lg h-40 object-fill "
                   />
                   <div className="">
                     <div className="absolute px-3 top-28">
-                      <h3 className="text-lg font-bold">Albert</h3>
+                      <h3 className="text-lg font-semibold text-white">Albert</h3>
                       <p className="text-sm text-white">85 Years</p>
                     </div>
                     <p className="text-[10px] px-2 tracking-tighter text-gray-600 ">
