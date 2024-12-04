@@ -18,8 +18,8 @@ const Detail: React.FC = () => {
               <div className="w-16 h-16 overflow-hidden rounded-2xl mx-auto ">
                 <Image src={bgImage} alt={"Ai character image"} className="w-full" />
               </div>
-              <h2 className="text-lg font-bold text-black">Albert</h2>
-              <p className="text-gray-500 px-6 text-sm">
+              <h2 className="text-2xl font-bold text-black">Albert</h2>
+              <p className="text-gray-500 px-6 ">
                 This is a short description for the AI character
               </p>
             </div>
@@ -27,40 +27,38 @@ const Detail: React.FC = () => {
             <div className="w-full max-w-sm space-y-6">
         {/* Personality Section */}
         <div>
-          <h3 className="text-xs ml-1 text-gray-500 font-medium mb-1">
+          <h3 className="text-xs ml-2 text-gray-500 font-medium mb-1">
             PERSONALITY
           </h3>
-          <p className="text-sm bg-white rounded-lg px-1 py-2 text-gray-800">
+          <p className="text-sm bg-white rounded-lg px-3 py-3 text-gray-800">
             Lorem ipsum dolor sit amet, consectetur
           </p>
         </div>
 
         {/* Occupation Section */}
         <div>
-          <h3 className="text-xs ml-1 text-gray-500 font-medium mb-1">OCCUPATION</h3>
-          <p className="text-sm bg-white rounded-lg px-1 py-2 text-gray-800">
+          <h3 className="text-xs ml-2 text-gray-500 font-medium mb-1">OCCUPATION</h3>
+          <p className="text-sm bg-white rounded-lg px-3 py-3 text-gray-800">
             Lorem ipsum dolor sit amet, consectetur
           </p>
         </div>
 
         {/* About Section */}
         <div>
-          <h3 className="text-xs ml-1 text-gray-500 font-medium mb-1">ABOUT</h3>
-          <p className="text-sm bg-white rounded-lg px-1 py-2 text-gray-800">
+          <h3 className="text-xs ml-2 text-gray-500 font-medium mb-1">ABOUT</h3>
+          <p className="text-sm bg-white rounded-lg px-3 py-3 text-gray-800">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p className="text-sm bg-white rounded-lg px-1 py-2 text-gray-800">
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p className="text-sm bg-white rounded-lg px-1 py-2 text-gray-800">
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </p>
+       
+        
         </div>
              </div>
           
@@ -70,15 +68,18 @@ const Detail: React.FC = () => {
 
             {/* Bottom Button */}
 
-            <button className="w-full bg-[#007cff] text-white py-2 rounded-lg text-sm font-semibold mt-6">
-            Chat now
+            <Link href=''>
+            <button className="w-[335px] mx-auto  bg-[#007cff]  text-white py-3   rounded-lg text-sm font-semibold">
+            Chat Now
             </button>
-
-            <button className="w-full bg-white text-black py-2 rounded-lg text-sm font-semibold mt-2">
-            <Link href="./explore">
-             Back to all Characters            
+          </Link>
+        
+                   
+            <Link href='/explore'>
+            <button className="w-[335px] mx-auto mt-2 bg-white text-black py-3 rounded-lg text-sm font-semibold ">
+          Back to all Characters
+            </button>
             </Link>
-            </button>
 
 
 

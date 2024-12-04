@@ -90,7 +90,7 @@ const Settings: React.FC = () => {
           </div>
         </div>
 
-        <hr className='mt-5 border-gray-400' />
+        <hr className='mt-5 border-gray-300' />
 
         {/* Chat Settings */}
         <div className="mt-5 px-3">
@@ -110,7 +110,7 @@ const Settings: React.FC = () => {
           </p>
         </div>
 
-        <hr className='mt-5 border-gray-400' />
+        <hr className='mt-5 border-gray-300' />
 
 
         {/* Help & Legal */}
@@ -191,7 +191,7 @@ const Settings: React.FC = () => {
           </div>
         </div>
 
-        <hr className='mt-5 border-gray-400' />
+        <hr className='mt-5 border-gray-300' />
 
         {/* Affiliate Button */}
         <div className="mt-5 px-3">
