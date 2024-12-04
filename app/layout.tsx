@@ -1,7 +1,8 @@
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { preventCloseOnScroll } from "./utils/preventCloseOnScroll";
 
 const geistSans = localFont({
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  useEffect(() => {
-    preventCloseOnScroll();
-  }, []);
+  // useEffect(() => {
+  //   preventCloseOnScroll();
+  // }, []);
   return (
     <html lang="en">
       <head>

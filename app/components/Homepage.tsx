@@ -4,9 +4,9 @@ import React from "react";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="bg-[#efeff3] relative  w-full mx-auto rounded-t-2xl sm:max-w-xs  flex-grow">
+    <div className="bg-[#efeff3] relative  w-full mx-auto sm:max-w-xs  flex-grow">
       <div className="bg-[#efeff3] w-full  p-6 ">
-        <div className="flex absolute top-36 right-0 left-0 flex-col px-2 items-center">
+        <div className="flex absolute top-36 right-0 left-0 flex-col px-3 items-center">
           {/* Icon Placeholder */}
           <div className="w-14 h-14 bg-[#00b0ff] rounded-2xl mb-4 mt-10"></div>
           {/* Title */}
@@ -87,7 +87,7 @@ const HomePage: React.FC = () => {
         </div>
 
         <Link href="./explore">
-          <button className="w-3/4 mx-auto  bg-[#007cff] absolute bottom-3 right-0 left-0 text-white py-3  rounded-lg text-sm font-semibold ">
+          <button className="w-[335px] mx-auto  bg-[#007cff] absolute bottom-3 right-0 left-0 text-white py-3  rounded-lg text-sm font-semibold ">
             Explore AI Characters
           </button>
         </Link>
