@@ -184,15 +184,26 @@ const Settings: React.FC = () => {
               </svg>
             </button>
           </div>
-
         </div>
-          <hr className="mt-5 border-gray-300" />
 
-          <div className="mt-5  ">
-            <button className="w-[335px] flex max-w-sm mx-auto bg-black items-end justify-center py-3  text-white  rounded-lg text-sm font-semibold ">
-              Become an Affiliate
+        <hr className="mt-5 border-gray-300" />
+
+        {/* Help & Legal */}
+        <div className="mt-6 px-3">
+          <div className="divide-y divide-gray-200 border border-gray-200 rounded-lg bg-white mb-">
+            <button className="flex bg-[#007cff] justify-center  w-full px-4 py-3 text-sm font-semibold text-center rounded-lg text-white">
+            Become an Affiliate
             </button>
           </div>
+        </div>
+
+        {/* <hr className="mt-5 border-gray-300" />
+
+          <div className="mt-5  ">
+            <button className="w-[335px] flex max-w-sm mx-auto bg-[#007cff] items-end justify-center py-3  text-white  rounded-lg text-sm font-semibold ">
+              Become an Affiliate
+            </button>
+          </div> */}
       </div>
     </div>
   );
