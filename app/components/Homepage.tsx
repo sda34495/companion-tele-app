@@ -5,7 +5,7 @@ import React from "react";
 const HomePage: React.FC = () => {
   return (
     <div className="bg-[#efeff3] relative w-full mx-auto sm:max-w-xs flex flex-col h-screen">
-      <div className="bg-[#efeff3] w-full pb-20 flex-grow">
+      <div className=" pb-20 flex-grow">
         <div className="flex mt-14 flex-col items-center">
           {/* Icon Placeholder */}
           <div className="w-14 h-14 bg-[#00b0ff] rounded-2xl mb-4 mt-10"></div>
@@ -86,14 +86,12 @@ const HomePage: React.FC = () => {
       
           <hr className="border-gray-300 w-full mt-4 mb-5" />
       {/* Button at the bottom */}
-      <div className="mt-auto px-3">
-        <div className="divide-y  rounded-lg ">
-          <Link href='/explore'>
-          <button className="flex bg-[#007cff] sticky justify-center w-full px-4 py-3 mb-5  font-semibold text-center rounded-lg  text-white">
+      <div className="sticky bottom-0 bg-[#efeff3] w-full px-3">
+        <Link href="/explore">
+          <button className="flex bg-[#007cff] justify-center w-full px-4 py-3 mb-5 font-semibold text-center rounded-lg text-white">
             Explore AI Characters
           </button>
-          </Link>
-        </div>
+        </Link>
       </div>
     </div>
   );
