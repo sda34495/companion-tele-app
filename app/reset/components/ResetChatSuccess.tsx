@@ -26,6 +26,7 @@ const ResetChatSuccess: React.FC = () => {
                    
             <button className="w-[335px] mx-auto  bg-[#007cff]  text-white py-3   rounded-lg text-sm font-semibold ">
             Open Chat
+            
             </button>
 
             <Link href='./explore'>

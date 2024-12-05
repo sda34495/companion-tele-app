@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -31,9 +30,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Add Telegram SDK script */}
         <script async src="https://telegram.org/js/telegram-web-app.js"></script>
       </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        >
+     
         {children}
       </body>
     </html>

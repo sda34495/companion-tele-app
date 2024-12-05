@@ -1,5 +1,6 @@
 'use client'
 import Homepage from "./components/Homepage";
+import LoadingScreen from "./components/LoadingScreen";
 
 
 

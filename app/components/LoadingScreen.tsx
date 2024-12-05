@@ -6,7 +6,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="bg-[#efeff3] relative  w-full mx-auto sm:max-w-xs  flex-grow">
       <div className="bg-[#efeff3] w-full  ">
-        <div className="flex absolute top-36 right-0 left-0 flex-col  items-center">
+        <div className="flex absolute top-10 right-0 left-0 flex-col  items-center">
           {/* Icon Placeholder */}
           <div className="w-14 h-14 bg-[#00b306] rounded-2xl mb-4 mt-10"></div>
           {/* Title */}
@@ -90,7 +90,7 @@ const HomePage: React.FC = () => {
         </div>
 
         <Link href="./explore">
-          <button className="w-[335px] mx-auto  bg-[#007cff] absolute bottom-3 right-0 left-0 text-white py-3  rounded-lg text-sm font-semibold ">
+        <button className="w-[335px] mx-auto bg-[#007cff] fixed bottom-5 inset-x-0 text-white py-3 rounded-lg text-sm font-semibold sm:max-w-xs">
             Explore AI Characters
           </button>
         </Link>
