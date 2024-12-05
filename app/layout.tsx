@@ -1,7 +1,6 @@
 "use client";
-import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { useEffect } from "react";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -22,6 +21,11 @@ declare global {
       WebApp: {
         disableVerticalSwipes: () => void;
         enableVerticalSwipes: () => void;
+        BackButton: {
+          show: () => void;
+          hide: () => void;
+          onClick: (callback: () => void) => void;
+        };
         [key: string]: any; // Include other methods/properties for flexibility
       };
     };
@@ -42,7 +46,17 @@ export default function RootLayout({
         window.Telegram.WebApp.disableVerticalSwipes();
         console.log("Vertical swipes disabled.");
 
-        // Add other initialization logic if needed
+        // Enable the back button
+        window.Telegram.WebApp.BackButton.show();
+        console.log("Back button enabled.");
+
+        // Handle back button click
+        window.Telegram.WebApp.BackButton.onClick(() => {
+          console.log("Back button clicked!");
+          // Implement custom back navigation logic
+          alert("Navigating back!");
+        });
+
         console.log("Telegram WebApp API is ready.");
       } catch (error) {
         console.error("Error initializing Telegram WebApp API:", error);
