@@ -68,9 +68,9 @@ const PaymentScreen: React.FC = () => {
 
       {/* Explore Button */}
       <Link href='./explore'>
-      <button className="w-3/4 mx-auto  bg-[#007cff] absolute bottom-3 right-0 left-0 text-white py-3  rounded-lg text-sm font-semibold ">
-        Explore AI Characters
-      </button>
+      <button className="flex bg-[#007cff] justify-center w-full px-4 py-3 mt-14  font-semibold text-center rounded-lg  text-white">
+            Explore AI Characters
+          </button>
       </Link>
     </div>
   );

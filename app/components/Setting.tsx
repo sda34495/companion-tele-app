@@ -12,7 +12,7 @@ const Settings: React.FC = () => {
             PROFILE DETAILS
           </h3>
           <div className="divide-y divide-gray-200 px-3 border border-gray-200 rounded-lg bg-white">
-            <div className="flex flex-row items-center justify-between px-2 py-3">
+            <div className="flex flex-row items-start justify-between px-2 py-3">
             <h1 className=" items-center  font-medium text-gray-900">
             Name </h1>
             <span className="text-gray-500 ">Lennard</span>
@@ -56,7 +56,7 @@ const Settings: React.FC = () => {
                   <div className="flex flex-row items-center justify-between px-2 py-3">
             <h1 className=" items-center  font-medium text-gray-900">
             Email </h1>
-            <span className="text-gray-500 self-end ">mail@lennard-klein.com</span>
+            <span className="text-gray-500 ">mail@gmail.com</span>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

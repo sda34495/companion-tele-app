@@ -10,11 +10,11 @@ const HomePage: React.FC = () => {
           {/* Icon Placeholder */}
           <div className="w-14 h-14 bg-[#00b0ff] rounded-2xl mb-4 mt-10"></div>
           {/* Title */}
-          <h2 className="text-4xl font-semibold text-gray-800 mb-1 tracking-tight">
+          <h2 className="text-3xl font-semibold text-gray-800 mb-1 tracking-tight">
             Cloud Companions
           </h2>
           {/* Subtitle */}
-          <p className="text-[#787878] text-lg px-4 text-center mb-6">
+          <p className="text-[#787878]  px-4 text-center mb-6">
             With Cloud Companions you can explore and chat with AI Characters
           </p>
           {/* Buttons */}
