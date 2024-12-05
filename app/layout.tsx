@@ -10,6 +10,7 @@ interface TelegramWebApp {
   preventClosing: () => void;
   close: () => void;
   expand: () => void;
+  disableVerticalSwipes: () => void;
   BackButton: {
     show: () => void;
     hide: () => void;
@@ -51,8 +52,8 @@ export default function RootLayout({
     const tg = window.Telegram?.WebApp;
     if (tg) {
       // Prevent closing on scroll
-      tg.preventClosing();
-
+      // tg.preventClosing();
+      tg.disableVerticalSwipes();
       // Show the back button and set up its behavior
       tg.BackButton.show();
       tg.BackButton.onClick(() => {
