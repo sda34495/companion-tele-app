@@ -5,11 +5,11 @@ import dynamic from 'next/dynamic';
 
 function page() {
 
-  const LazySection = dynamic(() => import('./components/Explore'), { ssr: false });
+ 
 
   return (
 <>
- <LazySection/>
+ <Explore/>
 </>
   )
 }
