@@ -6,7 +6,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="bg-[#efeff3] relative w-full mx-auto sm:max-w-xs flex-grow h-screen">
       <div className="bg-[#efeff3] w-full pb-20">
-        <div className="flex mt-10 top-10 right-0 left-0 flex-col items-center">
+        <div className="flex mt-0 top-10 right-0 left-0 flex-col items-center">
           {/* Icon Placeholder */}
           <div className="w-14 h-14 bg-[#00b0ff] rounded-2xl mb-4 mt-10"></div>
           {/* Title */}
@@ -83,12 +83,14 @@ const HomePage: React.FC = () => {
           </div>
           <hr className="border-gray-300 w-full mt-4" />
         </div>
+        <div className="mt-44 px-3">
+          <div className="divide-y divide-gray-200 border border-gray-200 rounded-lg bg-white mb-">
+            <button className="flex bg-[#007cff] justify-center  w-full px-4 py-3 text-sm font-semibold text-center rounded-lg text-white">
+            Become an Affiliate
+            </button>
+          </div>
+          </div>
       </div>
-      <Link href="./explore">
-        <button className="w-[335px] mx-auto bg-[#007cff] fixed bottom-5 inset-x-0 text-white py-3 rounded-lg text-sm font-semibold sm:max-w-xs">
-          Explore AI Characters
-        </button>
-      </Link>
     </div>
   );
 };
