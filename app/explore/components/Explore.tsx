@@ -36,7 +36,7 @@ const Explore: React.FC = () => {
                    
                     src={EinstineImage}
                     alt="Character"
-                    className="w-full rounded-lg h-40 object-fill "
+                    className="w-full rounded-lg h-40 object-cover "
                     priority
                   />
                   <div className="">
