@@ -4,8 +4,8 @@ import React from "react";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="bg-[#efeff3] relative w-full mx-auto sm:max-w-xs flex-grow ">
-      <div className="bg-[#efeff3] w-full pb-20">
+    <div className="bg-[#efeff3] relative w-full mx-auto sm:max-w-xs flex flex-col h-screen">
+      <div className="bg-[#efeff3] w-full pb-20 flex-grow">
         <div className="flex mt-0 top-10 right-0 left-0 flex-col items-center">
           {/* Icon Placeholder */}
           <div className="w-14 h-14 bg-[#00b0ff] rounded-2xl mb-4 mt-10"></div>
@@ -83,13 +83,15 @@ const HomePage: React.FC = () => {
           </div>
           <hr className="border-gray-300 w-full mt-4" />
         </div>
-        <div className="mt-44 px-3">
-          <div className="divide-y divide-gray-200 border border-gray-200 rounded-lg bg-white mb-">
-            <button className="flex bg-[#007cff] justify-center  w-full px-4 py-3 text-sm font-semibold text-center rounded-lg text-white">
-            Become an Affiliate
-            </button>
-          </div>
-          </div>
+      </div>
+      
+      {/* Button at the bottom */}
+      <div className="mt-auto px-3">
+        <div className="divide-y divide-gray-200 border border-gray-200 rounded-lg bg-white">
+          <button className="flex bg-[#007cff] justify-center w-full px-4 py-3 mb-3 text-sm font-semibold text-center rounded-lg text-white">
+            Explore AI Characters
+          </button>
+        </div>
       </div>
     </div>
   );
