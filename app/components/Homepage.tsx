@@ -85,7 +85,7 @@ const HomePage: React.FC = () => {
         </div>
       </div>
       <Link href="./explore">
-        <button className="w-[335px] mx-auto bg-[#007cff]  bottom-5 inset-x-0 text-white py-3 rounded-lg text-sm font-semibold sm:max-w-xs">
+        <button className="w-[335px] mx-auto bg-[#007cff] fixed bottom-5 inset-x-0 text-white py-3 rounded-lg text-sm font-semibold sm:max-w-xs">
           Explore AI Characters
         </button>
       </Link>

@@ -1,8 +1,8 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
-// import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,10 +38,26 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // const router = useRouter(); 
+  const pathname = usePathname();
+  const [isMainPage, setIsMainPage] = useState(false); // State to track if on main page
+
+   // Check if the current route is the main page
+   useEffect(() => {
+    if (pathname === '/') {
+      setIsMainPage(true);
+    } else {
+      setIsMainPage(false);
+    }
+  }, [pathname]);
+
   const handleBack = () => {
-   
-    history.back(); // Go back to the previous page
+    if (isMainPage) {
+      // Close the app when on the main page
+      window.Telegram?.WebApp.close();
+    } else {
+      // Go back to the previous page if not on the main page
+      history.back();
+    }
   };
   useEffect(() => {
     if (typeof window !== "undefined" && window.Telegram?.WebApp) {
@@ -70,7 +86,7 @@ export default function RootLayout({
     } else {
       console.warn("Telegram WebApp API is not available.");
     }
-  }, []);
+  }, [isMainPage]);
 
   return (
     <html lang="en">
