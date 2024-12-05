@@ -72,7 +72,7 @@ const Detail: React.FC = () => {
 
 
           <Link href="">
-            <button className="flex bg-white text-black justify-center  w-full px-4 py-3  font-semibold text-center rounded-lg">
+            <button className="flex bg-white text-black justify-center  w-full px-4 py-3 mb-5 font-semibold text-center rounded-lg">
             Back to all Characters
             </button>
           </Link>
