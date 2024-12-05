@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
+import { useRouter } from "next/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,6 +38,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const router = useRouter(); 
+  const handleBack = () => {
+   
+    router.back(); // Go back to the previous page
+  };
   useEffect(() => {
     if (typeof window !== "undefined" && window.Telegram?.WebApp) {
       try {
@@ -54,7 +60,7 @@ export default function RootLayout({
         window.Telegram.WebApp.BackButton.onClick(() => {
           console.log("Back button clicked!");
           // Implement custom back navigation logic
-          alert("Navigating back!");
+          handleBack()
         });
 
         console.log("Telegram WebApp API is ready.");
