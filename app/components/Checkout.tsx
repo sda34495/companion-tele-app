@@ -17,7 +17,7 @@ const PaymentScreen: React.FC = () => {
            <Image src={hearts} alt='heart image' className=''/>
           </div>
           <div className="ml-4 ">
-            <h2 className="text-base font-semibold text-black">200 Hearts</h2>
+            <h2 className=" font-semibold text-xl text-black">200 Hearts</h2>
             <p className="text-sm text-gray-500">
               This is a short description for the AI character
             </p>
@@ -43,7 +43,7 @@ const PaymentScreen: React.FC = () => {
 
       {/* Payment Details Section */}
       <div className="bg-white w-full rounded-lg shadow-md mt-4 ">
-        <button className="w-full flex justify-between items-center py-3 px-4 border-b border-gray-200 text-sm text-black">
+        <button className="w-full flex justify-between items-center py-3 px-4 border-b border-gray-200 text-black">
           <span>Payment Method</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ const PaymentScreen: React.FC = () => {
             />
           </svg>
         </button>
-        <div className="py-3 px-4 text-sm text-black flex justify-between">
+        <div className="py-3 px-4 text-black flex justify-between">
           <span>Name</span>
           <span className="font-medium text-gray-600">LENNARD KLEIN</span>
         </div>

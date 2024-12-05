@@ -13,8 +13,8 @@ const HeartsPricing: React.FC = () => {
         <div className=" rounded-full w-24 p-3">
           <Image src={headerImage} alt='header image' priority/>
         </div>
-        <p className="text-2xl font-bold mt-2">200</p>
-        <p className="text-sm text-gray-500">Current Balance</p>
+        <p className="text-3xl font-bold mt-2">200</p>
+        <p className=" text-gray-500">Current Balance</p>
       </div>
 
       {/* Pricing Options */}
@@ -38,8 +38,8 @@ const HeartsPricing: React.FC = () => {
                 
               </div>
               <div>
-                <p className="font-medium text-gray-900">{item.hearts} Hearts</p>
-                <p className="text-xs text-gray-500">
+                <p className="font-medium text-lg text-gray-900">{item.hearts} Hearts</p>
+                <p className="text-sm text-gray-500">
                   This is a short description for the AI character
                 </p>
               </div>
