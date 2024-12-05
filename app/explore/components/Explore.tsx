@@ -16,8 +16,8 @@ const Explore: React.FC = () => {
             {/* Icon Placeholder */}
             <div className="text-center mb-10">
               <div className="w-16 h-16 bg-[#00b0ff] rounded-2xl mx-auto "></div>
-              <h2 className="text-3xl font-bold mt-2 text-black">
-                Explore Characters
+              <h2 className="text-3xl font-bold mt-2 text-teal-500">
+                Explore Characters with us 
               </h2>
               <p className="text-gray-500  px-4 tracking-tighter">
                 With Cloud Companions you can explore and chat with AI
