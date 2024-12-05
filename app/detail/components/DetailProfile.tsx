@@ -18,7 +18,7 @@ const Detail: React.FC = () => {
               <Image src={bgImage} alt={"Ai character image"} className="w-full" />
             </div>
             <h2 className="text-2xl font-bold text-black">Albert</h2>
-            <p className="text-gray-500 px-6">
+            <p className="text-gray-500 px-6 text-lg">
               This is a short description for the AI character
             </p>
           </div>
@@ -27,7 +27,7 @@ const Detail: React.FC = () => {
           <div className="w-full max-w-sm space-y-6">
             {/* Personality Section */}
             <div>
-              <h3 className="text-xs ml-2 text-gray-500 font-medium mb-1">
+              <h3 className="text-sm ml-2 text-gray-500 font-medium mb-1">
                 PERSONALITY
               </h3>
               <p className="text-sm bg-white rounded-lg px-3 py-3 text-gray-800">
@@ -37,7 +37,7 @@ const Detail: React.FC = () => {
 
             {/* Occupation Section */}
             <div>
-              <h3 className="text-xs ml-2 text-gray-500 font-medium mb-1">OCCUPATION</h3>
+              <h3 className="text-sm ml-2 text-gray-500 font-medium mb-1">OCCUPATION</h3>
               <p className="text-sm bg-white rounded-lg px-3 py-3 text-gray-800">
                 Lorem ipsum dolor sit amet, consectetur
               </p>
@@ -45,7 +45,7 @@ const Detail: React.FC = () => {
 
             {/* About Section */}
             <div>
-              <h3 className="text-xs ml-2 text-gray-500 font-medium mb-1">ABOUT</h3>
+              <h3 className="text-sm ml-2 text-gray-500 font-medium mb-1">ABOUT</h3>
               <p className="text-sm bg-white rounded-lg px-3 py-3 text-gray-800">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -58,26 +58,29 @@ const Detail: React.FC = () => {
             </div>
           </div>
 
-          <hr className="border-gray-300 w-full mt-4" />
 
           {/* Bottom Buttons */}
-          <div className="w-full flex flex-col items-center">
-            {/* Chat Now Button */}
-            <Link href="">
-              <button className="w-[335px] bg-[#007cff] text-white py-3 mt-5 rounded-lg text-sm font-semibold">
-                Chat Now
-              </button>
-            </Link>
-
-            {/* Back to all Characters Button */}
-            <Link href="/explore">
-              <button className="w-[335px] mt-2 bg-white text-black py-3 rounded-lg text-sm font-semibold">
-                Back to all Characters
-              </button>
-            </Link>
-          </div>
         </div>
       </div>
+          <hr className="border-gray-300 w-full mt-2" />
+          <div className="divide-y rounded-lg mt-6 px-3 ">
+          <Link href="">
+            <button className="flex bg-[#007cff] justify-center mb-3  w-full px-4 py-3  font-semibold text-center rounded-lg text-white">
+            Chat Now
+            </button>
+          </Link>
+
+
+          <Link href="">
+            <button className="flex bg-white text-black justify-center  w-full px-4 py-3  font-semibold text-center rounded-lg">
+            Back to all Characters
+            </button>
+          </Link>
+
+
+
+          
+        </div>
     </div>
   );
 };
