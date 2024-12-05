@@ -195,7 +195,7 @@ const Settings: React.FC = () => {
 
         {/* Affiliate Button */}
         <div className="mt-5 px-3">
-          <button className="w-[335px] mx-auto bg-[#007cff]  bottom-5 inset-x-0 text-white py-3 rounded-lg text-sm font-semibold sm:max-w-xs">
+          <button className="w-[335px] mx-auto bg-[#007cff] fixed  bottom-0 inset-x-0 left-0 right-0 text-white py-3 rounded-lg text-sm font-semibold sm:max-w-xs">
             Become an Affiliate
           </button>
         </div>
