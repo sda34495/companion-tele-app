@@ -6,7 +6,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="bg-[#efeff3] relative w-full mx-auto sm:max-w-xs flex flex-col h-screen">
       <div className="bg-[#efeff3] w-full pb-20 flex-grow">
-        <div className="flex mt-0 top-10 right-0 left-0 flex-col items-center">
+        <div className="flex mt-14 flex-col items-center">
           {/* Icon Placeholder */}
           <div className="w-14 h-14 bg-[#00b0ff] rounded-2xl mb-4 mt-10"></div>
           {/* Title */}
@@ -87,7 +87,7 @@ const HomePage: React.FC = () => {
       
       {/* Button at the bottom */}
       <div className="mt-auto px-3">
-        <div className="divide-y rounded-lg ">
+        <div className="divide-y border rounded-lg ">
           <Link href='/explore'>
           <button className="flex bg-[#007cff] justify-center w-full px-4 py-3 mb-3 text-sm font-semibold text-center rounded-lg text-white">
             Explore AI Characters
