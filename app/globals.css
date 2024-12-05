@@ -1,24 +1,27 @@
+/* global.css */
+
+/* Tailwind's base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Global CSS variables and styles */
 :root {
-  --color-bg-secondary: #f9f9f9; /* Replace with actual value */
-  --color-text: #333333;
+  --color-bg-secondary: #f9f9f9; /* Light mode background */
+  --color-text: #333333; /* Text color */
   --family: Arial, Helvetica, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg-secondary: #121212; /* Dark mode background */
-    --color-text: #ededed;
-    
+    --color-text: #ededed; /* Light text for dark background */
   }
 }
 
-*{
-  transition: all 0.3s;
+/* Apply smooth transitions globally */
+* {
+  transition: all 0.3s ease;
 }
 
 body {
@@ -29,21 +32,23 @@ body {
   background-color: var(--color-bg-secondary);
   font-family: var(--family);
 
-  /* Smoothing and text optimizations */
+  /* Smooth scrolling and text optimizations */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; /* Prevent font size changes on zoom */
+  overflow-y: auto; /* Ensure vertical scroll */
 }
 
 #app {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   min-height: 100%;
   width: 100%;
 
+  /* Ensure proper width on small devices */
   @media (min-width: 460px) {
     max-width: 390px;
     margin: 0 auto;
@@ -63,6 +68,7 @@ body {
   right: 0;
 }
 
+/* Add animation transitions for default routes */
 .default-segue-enter-active {
   transition: opacity 500ms ease;
   will-change: opacity;
