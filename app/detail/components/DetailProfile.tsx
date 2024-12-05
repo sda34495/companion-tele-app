@@ -46,7 +46,7 @@ const Detail: React.FC = () => {
             {/* About Section */}
             <div>
               <h3 className="text-sm ml-2 text-gray-500 font-medium mb-1">ABOUT</h3>
-              <p className="text-sm bg-white rounded-lg px-3 py-3 text-gray-800">
+              <p className="text-sm bg-white rounded-lg px-3 py-3 text-justify text-gray-800">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
