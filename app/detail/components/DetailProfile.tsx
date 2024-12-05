@@ -8,7 +8,7 @@ const Detail: React.FC = () => {
   return (
     <div className="bg-[#efeff3] w-full sm:max-w-xs mx-auto flex flex-col min-h-screen">
       {/* Background Image */}
-      <Image src={bgImage} alt={"bg-image"} className="w-full" />
+      <Image src={bgImage} alt={"bg-image"} className="w-full h-[250px] object-cover " />
 
       <div className="bg-[#efeff3] w-full py-6 px-4 flex-grow">
         <div className="flex flex-col items-center">
