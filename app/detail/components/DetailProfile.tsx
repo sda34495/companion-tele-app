@@ -60,16 +60,12 @@ const Detail: React.FC = () => {
        
         
         </div>
-             </div>
-          
-
-
             <hr className=" border-gray-300 w-full mt-4" />
 
             {/* Bottom Button */}
 
             <Link href=''>
-            <button className="w-[335px] mx-auto  bg-[#007cff]  text-white py-3   rounded-lg text-sm font-semibold">
+            <button className="w-[335px] mx-auto  bg-[#007cff]  text-white py-3  mt-5  rounded-lg text-sm font-semibold">
             Chat Now
             </button>
           </Link>
@@ -80,6 +76,10 @@ const Detail: React.FC = () => {
           Back to all Characters
             </button>
             </Link>
+             </div>
+          
+
+
 
 
 
