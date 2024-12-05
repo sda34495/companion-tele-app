@@ -12,13 +12,7 @@ export default function Home() {
   return (
     
     <>
-    <Homepage/>
-    {/* <LazySection/> */}
-    {/* <Setting/> */}
-    {/* <ResetChat/> */}
-    {/* <LoadingScreen/> */}
-{/* <ResetChatSuccess/> */}
-  
+    <Homepage/>  
     </>
 
   )
