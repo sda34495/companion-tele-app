@@ -6,7 +6,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="bg-[#efeff3] relative w-full mx-auto sm:max-w-xs flex-grow h-screen">
       <div className="bg-[#efeff3] w-full pb-20">
-        <div className="flex absolute top-10 right-0 left-0 flex-col items-center">
+        <div className="flex mt-10 top-10 right-0 left-0 flex-col items-center">
           {/* Icon Placeholder */}
           <div className="w-14 h-14 bg-[#00b0ff] rounded-2xl mb-4 mt-10"></div>
           {/* Title */}
