@@ -10,18 +10,18 @@ const HomePage: React.FC = () => {
           {/* Icon Placeholder */}
           <div className="w-14 h-14 bg-[#00b0ff] rounded-2xl mb-4 mt-10"></div>
           {/* Title */}
-          <h2 className="text-3xl font-semibold text-gray-800 mb-1 tracking-tight">
+          <h2 className="text-4xl font-semibold text-gray-800 mb-1 tracking-tight">
             Cloud Companions
           </h2>
           {/* Subtitle */}
-          <p className="text-[#787878] px-4 text-center mb-6">
+          <p className="text-[#787878] text-lg px-4 text-center mb-6">
             With Cloud Companions you can explore and chat with AI Characters
           </p>
           {/* Buttons */}
           <div className="w-full px-3">
             <div className="divide-y px-3 divide-gray-200 border border-gray-200 rounded-lg w-full bg-white">
               <Link href="./setting">
-                <button className="flex items-center justify-between w-full py-3 text-sm font-medium text-left text-gray-900">
+                <button className="flex items-center justify-between w-full py-3  font-medium text-left text-gray-900">
                   Personal Settings
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
                 <hr />
               </Link>
               <Link href="./payment">
-                <button className="flex items-center justify-between w-full py-3 text-sm font-medium text-left text-gray-900">
+                <button className="flex items-center justify-between w-full py-3  font-medium text-left text-gray-900">
                   Purchase Hearts
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ const HomePage: React.FC = () => {
               </Link>
               <hr />
               <Link href="./reset">
-                <button className="flex items-center justify-between w-full py-3 text-sm font-medium text-left text-gray-900">
+                <button className="flex items-center justify-between w-full py-3  font-medium text-left text-gray-900">
                   Reset Chat
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ const HomePage: React.FC = () => {
       <div className="mt-auto px-3">
         <div className="divide-y border rounded-lg ">
           <Link href='/explore'>
-          <button className="flex bg-[#007cff] justify-center w-full px-4 py-3 mb-3 text-sm font-semibold text-center rounded-lg text-white">
+          <button className="flex bg-[#007cff] justify-center w-full px-4 py-3 mb-5  font-semibold text-center rounded-lg  text-white">
             Explore AI Characters
           </button>
           </Link>
