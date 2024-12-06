@@ -82,8 +82,6 @@ const HomePage: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
-      
           <hr className="border-gray-300 w-full mt-4 mb-5" />
       {/* Button at the bottom */}
       <div className=" bg-[#efeff3] w-full px-3">
@@ -93,6 +91,8 @@ const HomePage: React.FC = () => {
           </button>
         </Link>
       </div>
+      </div>
+      
     </div>
   );
 };
