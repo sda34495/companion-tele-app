@@ -21,6 +21,7 @@ declare global {
     Telegram?: {
       MainButton: any;
       WebApp: {
+        expand: () => void;
         disableVerticalSwipes: () => void;
         enableVerticalSwipes: () => void;
         BackButton: {
@@ -47,6 +48,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     if (typeof window !== "undefined" && window.Telegram?.WebApp) {
       try {
         console.log("Initializing Telegram WebApp...");
+
+        window.Telegram.WebApp.expand();
+        console.log("Telegram WebApp expanded to full height.");
 
         // Disable vertical swipes
         window.Telegram.WebApp.disableVerticalSwipes();
