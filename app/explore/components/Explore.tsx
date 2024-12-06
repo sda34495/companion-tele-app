@@ -16,8 +16,8 @@ const Explore: React.FC = () => {
             {/* Icon Placeholder */}
             <div className="text-center mb-10">
               <div className="w-16 h-16 bg-[#00b0ff] rounded-2xl mx-auto "></div>
-              <h2 className="text-3xl font-bold mt-2 text-black">
-                Explore Characters with us 
+              <h2 className="text-2xl font-bold mt-2 text-black">
+                Explore Characters
               </h2>
               <p className="text-gray-500  px-4 tracking-tighter">
                 With Cloud Companions you can explore and chat with AI
@@ -44,7 +44,7 @@ const Explore: React.FC = () => {
                       <h3 className="text-lg font-semibold text-white">Albert</h3>
                       <p className="text-sm text-white ">85 Years</p>
                     </div>
-                    <p className="text-xs px-2 py-1 text-gray-600 ">
+                    <p className="text-sm px-2 py-1 text-gray-600 ">
                       This is a short description for the AI character.
                     </p>
                   </div>
@@ -54,7 +54,7 @@ const Explore: React.FC = () => {
             </div>
 
 
-            <hr className=" border-gray-300 w-full mt-4" />
+            {/* <hr className=" border-gray-300 w-full mt-4" /> */}
             {/* Bottom Button */}
           </div>
         </div>
