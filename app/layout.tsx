@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,28 +19,32 @@ const geistMono = localFont({
 declare global {
   interface Window {
     Telegram?: {
+      MainButton: any;
       WebApp: {
         disableVerticalSwipes: () => void;
         enableVerticalSwipes: () => void;
         BackButton: {
+          close: () => void;
           show: () => void;
           hide: () => void;
           onClick: (callback: () => void) => void;
         };
+       
+        close: () => void; // Closes the WebApp
         [key: string]: any; // Include other methods/properties for flexibility
       };
     };
   }
 }
 
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  // const router = useRouter(); 
+  const router = useRouter();
   const handleBack = () => {
-   
     history.back(); // Go back to the previous page
   };
   useEffect(() => {
@@ -53,14 +57,23 @@ export default function RootLayout({
         console.log("Vertical swipes disabled.");
 
         // Enable the back button
-        window.Telegram.WebApp.BackButton.show();
-        console.log("Back button enabled.");
+        // window.Telegram.WebApp.BackButton.show();
+        // console.log("Back button enabled.");
 
-        // Handle back button click
-        window.Telegram.WebApp.BackButton.onClick(() => {
-          console.log("Back button clicked!");
-          // Implement custom back navigation logic
-          handleBack()
+        // // Handle back button click
+        // window.Telegram.WebApp.BackButton.onClick(() => {
+        //   console.log("Back button clicked!");
+        //   // Implement custom back navigation logic
+        //   handleBack()
+        // });
+
+        window.Telegram.MainButton.text = "Close";
+        window.Telegram.MainButton.color = "#FF0000"; // Optional: Change button color to red
+        window.Telegram.MainButton.show();
+
+        // Add an event listener to close the app when the MainButton is clicked
+        window.Telegram.MainButton.onClick(() => {
+          window.Telegram?.WebApp.close();
         });
 
         console.log("Telegram WebApp API is ready.");
