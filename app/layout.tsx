@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,7 +29,6 @@ declare global {
           hide: () => void;
           onClick: (callback: () => void) => void;
         };
-       
         close: () => void; // Closes the WebApp
         [key: string]: any; // Include other methods/properties for flexibility
       };
@@ -37,21 +36,12 @@ declare global {
   }
 }
 
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-
 
   const handleBack = () => {
     history.back(); // Go back to the previous page
   };
-
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.Telegram?.WebApp) {
@@ -62,34 +52,33 @@ export default function RootLayout({
         window.Telegram.WebApp.disableVerticalSwipes();
         console.log("Vertical swipes disabled.");
 
+        // When on the home page ("/"), show the "close" button
         if (pathname === '/') {
-
           window.Telegram.MainButton.text = "Close";
           window.Telegram.MainButton.color = "#FF0000"; // Optional: Change button color to red
           window.Telegram.MainButton.show();
-  
+
           // Add an event listener to close the app when the MainButton is clicked
           window.Telegram.MainButton.onClick(() => {
             window.Telegram?.WebApp.close();
           });
 
+          // Hide the back button on the root page
+          window.Telegram.WebApp.BackButton.hide();
+          console.log("Close button shown, back button hidden.");
           
         } else {
-
-          
-          // Enable the back button
+          // Show back button on all other pages
           window.Telegram.WebApp.BackButton.show();
           console.log("Back button enabled.");
-          
+
           // Handle back button click
           window.Telegram.WebApp.BackButton.onClick(() => {
-              console.log("Back button clicked!");
-              // Implement custom back navigation logic
-              handleBack()
-            });
-            
-          }
-      
+            console.log("Back button clicked!");
+            // Implement custom back navigation logic
+            handleBack();
+          });
+        }
 
         console.log("Telegram WebApp API is ready.");
       } catch (error) {
@@ -98,20 +87,26 @@ export default function RootLayout({
     } else {
       console.warn("Telegram WebApp API is not available.");
     }
-  }, [pathname]);
+
+    // Cleanup function to hide buttons when leaving the page
+    return () => {
+      if (window.Telegram?.MainButton) {
+        window.Telegram.MainButton.hide();
+      }
+      if (window.Telegram?.WebApp.BackButton) {
+        window.Telegram.WebApp.BackButton.hide();
+      }
+    };
+
+  }, [pathname]); // Dependency array with pathname to rerun on route change
 
   return (
     <html lang="en">
       <head>
         {/* Add Telegram SDK script */}
-        <script
-          async
-          src="https://telegram.org/js/telegram-web-app.js"
-        ></script>
+        <script async src="https://telegram.org/js/telegram-web-app.js"></script>
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
