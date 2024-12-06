@@ -5,8 +5,8 @@ import TestHome from "./components/TestHome";
 export default function Home() {
   return (
     <>
-      <Homepage />
-      {/* <TestHome/> */}
+      {/* <Homepage /> */}
+      <TestHome/>
     </>
   );
 }
