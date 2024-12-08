@@ -4,14 +4,6 @@ import React from "react";
 
 const HomePage: React.FC = () => {
 
-  const handleButtonClick = () => {
-    // Trigger haptic feedback if vibration is supported
-    if (navigator.vibrate) {
-      // Short vibration (e.g., 100ms) on mobile devices
-      navigator.vibrate(100);
-    }
-  };
-
   return (
     <div className="bg-[#efeff3] relative w-full mx-auto sm:max-w-xs flex flex-col h-screen">
       <div className=" pb-20 flex-grow">
@@ -106,9 +98,7 @@ const HomePage: React.FC = () => {
 <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full max-w-sm mx-auto pb-[env(safe-area-inset-bottom)] ">
         <div className="pb-5">
         <Link href="/explore">
-        <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold"
-        onClick={handleButtonClick}
-        >
+        <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
         Explore AI Characters
         </button>
         </Link>
