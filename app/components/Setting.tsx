@@ -11,30 +11,36 @@ const Settings: React.FC = () => {
           <h3 className="text-sm ml-2 text-gray-500 font-medium mb-2 ">
             PROFILE DETAILS
           </h3>
-          <div className="divide-y divide-gray-200 px-3 border border-gray-200 rounded-lg bg-white">
-            <div className="flex flex-row items-start justify-between px-2 py-3">
-            <h1 className=" items-center  font-medium text-gray-900">
-            Name </h1>
-            <span className="text-gray-500 ">Lennard</span>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-5 text-[#787878]"
-                >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  />
-              </svg>            
-            </div>
-            <div className="flex flex-row items-center justify-between px-2 py-3">
-            <h1 className="items-center  font-medium text-gray-900">
+          <div className=" overflow-hidden rounded-lg  bg-white">
+
+          <div className="flex flex-row items-start hover:bg-gray-300 justify-between px-4 py-3">
+  <h1 className="font-medium text-gray-900">Name</h1>
+  <div className="flex items-center space-x-2">
+    <span className="text-gray-500">Lennard</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className="size-5 text-[#787878]"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+      />
+    </svg>
+  </div>
+</div>
+              <hr className="border- border-gray-200 mx-4" />  
+
+            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+            <h1 className="  font-medium text-gray-900">
               Gender
               </h1>
+              <div className="flex items-center space-x-2">
+
               <span className="text-gray-500">Male</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,11 +57,13 @@ const Settings: React.FC = () => {
                   />
               </svg>
                   </div>
+                  </div>
+                  <hr className="border- border-gray-200 mx-4" /> 
               
-              
-                  <div className="flex flex-row items-center justify-between px-2 py-3">
-            <h1 className=" items-center  font-medium text-gray-900">
+                  <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+            <h1 className="  font-medium text-gray-900">
             Email </h1>
+            <div className="flex items-center space-x-2">
             <span className="text-gray-500 ">mail@gmail.com</span>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,12 +79,15 @@ const Settings: React.FC = () => {
                   d="m8.25 4.5 7.5 7.5-7.5 7.5"
                   />
               </svg>            
+                  </div>            
             </div>
+            <hr className="border- border-gray-200 mx-4" /> 
 
-
-            <div className="flex flex-row items-center justify-between px-2 py-3">
-            <h1 className=" items-center  font-medium text-gray-900">
+            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+            <h1 className=" font-medium text-gray-900">
             Language </h1>
+            <div className="flex items-center space-x-2">
+
             <span className="text-gray-500 self-end ">English</span>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,6 +104,7 @@ const Settings: React.FC = () => {
                   />
               </svg>            
             </div>
+                  </div>
           </div>
         </div>
 
@@ -103,7 +115,7 @@ const Settings: React.FC = () => {
           <h3 className="text-sm ml-2 text-gray-500 font-medium mb-2">
             CHAT SETTINGS
           </h3>
-          <div className="flex items-center justify-between px-4 py-3 border border-gray-200 rounded-lg bg-white">
+          <div className="flex hover:bg-gray-300 items-center justify-between px-4 py-3 border border-gray-200 rounded-lg bg-white">
             <span className=" text-gray-900">Notifications</span>
             <label className="relative inline-flex items-center cursor-pointer">
               <input type="checkbox" value="" className="sr-only peer" />
@@ -124,8 +136,8 @@ const Settings: React.FC = () => {
           <h3 className="text-sm ml-2 text-gray-500 font-medium mb-2">
             HELP & LEGAL
           </h3>
-          <div className="divide-y divide-gray-200 border border-gray-200 rounded-lg bg-white mb-">
-            <button className="flex items-center justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+          <div className=" overflow-hidden rounded-lg bg-white ">
+            <button className="flex hover:bg-gray-300 items-center justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Imprint
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +154,8 @@ const Settings: React.FC = () => {
                 />
               </svg>
             </button>
-            <button className="flex items-center justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+            <hr className="border- border-gray-200 mx-4" /> 
+            <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Privacy Policy
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +172,8 @@ const Settings: React.FC = () => {
                 />
               </svg>
             </button>
-            <button className="flex items-center justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+            <hr className="border- border-gray-200 mx-4" /> 
+            <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Terms of Use
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +190,8 @@ const Settings: React.FC = () => {
                 />
               </svg>
             </button>
-            <button className="flex items-center justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+            <hr className="border- border-gray-200 mx-4" /> 
+            <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Contact Support
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -196,24 +211,24 @@ const Settings: React.FC = () => {
           </div>
         </div>
 
-        <hr className="mt-5 border-gray-300" />
+        {/* <hr className="mt-5 border-gray-300" /> */}
 
         {/* Help & Legal */}
-        <div className="mt-6 px-3">
+        {/* <div className="mt-6 px-3">
           <div className="divide-y divide-gray-200 border border-gray-200 rounded-lg bg-white mb-">
             <button className="flex bg-[#007cff] justify-center  w-full px-4 py-3  font-semibold text-center rounded-lg text-white">
             Become an Affiliate
             </button>
           </div>
-        </div>
+        </div> */}
 
-        {/* <hr className="mt-5 border-gray-300" />
+        {/* <hr className="mt-5 border-gray-300" /> */}
 
-          <div className="mt-5  ">
-            <button className="w-[335px] flex max-w-sm mx-auto bg-[#007cff] items-end justify-center py-3  text-white  rounded-lg text-sm font-semibold ">
+          <div className="mt-5 absolute bottom-0 left-0 right-0 bg-[#f2f2f2] w-full max-w-sm mx-auto ">
+            <button className=" flex mx-auto bg-[#007cff] items-end justify-center py-3 m-6 w-full text-white  rounded-lg text-lg font-semibold ">
               Become an Affiliate
             </button>
-          </div> */}
+          </div>
       </div>
     </div>
   );
