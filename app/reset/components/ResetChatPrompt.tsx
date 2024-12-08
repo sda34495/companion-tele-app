@@ -24,7 +24,7 @@ const ResetChatPrompt: React.FC = () => {
 
 
 
-          <Link href='./success'>
+          {/* <Link href='./success'>
             <button className="w-[335px] mx-auto  bg-[#007cff]  text-white py-3   rounded-lg font-semibold">
             Yes, delete chat memory
             </button>
@@ -35,10 +35,21 @@ const ResetChatPrompt: React.FC = () => {
             <button className="w-[335px] mx-auto mt-2 bg-white text-black py-3 rounded-lg  font-semibold ">
            No, go back
             </button>
-            </Link>
+            </Link> */}
           </div>
 
         </div>
+
+        <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full max-w-sm mx-auto pb-[env(safe-area-inset-bottom)] ">
+        <div className="pb-5">
+        <Link href="/success">
+        <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
+        Yes, delete chat memory
+        </button>
+        </Link>
+        </div>
+      </div>
+
       </div>
   );
 };
