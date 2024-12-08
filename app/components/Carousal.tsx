@@ -15,6 +15,7 @@ function Carousal() {
     slidesToShow: 1,
     // swipeToSlide: true,
     slidesToScroll: 1,
+    arrows: false
   };
 
   return (
