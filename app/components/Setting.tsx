@@ -5,7 +5,7 @@ import React from "react";
 const Settings: React.FC = () => {
   return (
     <div className="bg-[#efeff3] w-full sm:max-w-xs mx-auto flex-grow">
-      <div className=" py-6 flex-col w-full sm:max-w-xs mx-auto   ">
+      <div className=" py-6 flex-col w-full sm:max-w-xs mx-auto mb-20   ">
         {/* Profile Details */}
         <div className="px-3">
           <h3 className="text-sm ml-2 text-gray-500 font-medium mb-2 ">
