@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
 import { usePathname } from "next/navigation";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -14,7 +15,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-// Declare the Telegram WebApp API and HapticFeedback API globally
+// Declare the Telegram WebApp API globally
 declare global {
   interface Window {
     Telegram?: {
@@ -32,7 +33,6 @@ declare global {
         close: () => void; // Closes the WebApp
         [key: string]: any; // Include other methods/properties for flexibility
       };
-     
     };
   }
 }
@@ -62,6 +62,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           window.Telegram.MainButton.color = "#FF0000"; // Optional: Change button color to red
           window.Telegram.MainButton.show();
 
+          // Add an event listener to close the app when the MainButton is clicked
+          window.Telegram.MainButton.onClick(() => {
+            window.Telegram?.WebApp.close();
+          });
+
           // Hide the back button on the root page
           window.Telegram.WebApp.BackButton.hide();
           console.log("Close button shown, back button hidden.");
@@ -70,6 +75,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           // Show back button on all other pages
           window.Telegram.WebApp.BackButton.show();
           console.log("Back button enabled.");
+
+          // Handle back button click
+          window.Telegram.WebApp.BackButton.onClick(() => {
+            console.log("Back button clicked!");
+            // Implement custom back navigation logic
+            handleBack();
+          });
         }
 
         console.log("Telegram WebApp API is ready.");
@@ -93,8 +105,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }, [pathname]); // Dependency array with pathname to rerun on route change
 
   return (
- 
-
     <html lang="en">
       <head>
         {/* Add Telegram SDK script */}
