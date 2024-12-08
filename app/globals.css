@@ -84,3 +84,7 @@ body {
   height: 0;
   overflow: hidden;
 }
+
+bpdy {
+  @apply bg-black
+}
