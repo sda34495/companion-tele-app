@@ -309,8 +309,8 @@ const Settings: React.FC = () => {
         {/* <hr className="mt-5 border-gray-300" /> */}
 
       </div>
-        <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] p-4 w-full max-w-sm mx-auto">
-        <button className="flex mx-auto bg-[#007cff] items-center justify-center py-3  w-full text-white rounded-lg text-lg font-semibold">
+        <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] p-3  w-full max-w-sm mx-auto">
+        <button className="flex mx-auto bg-[#007cff] items-center mb-2 justify-center py-3  w-full text-white rounded-lg text-lg font-semibold">
           Become an Affiliate
         </button>
       </div>
