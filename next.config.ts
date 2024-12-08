@@ -21,6 +21,9 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  images: {
+    domains: ['dnm.nflximg.net'], // Add this line to allow the domain for external images
+  },
 };
 
 export default nextConfig;
