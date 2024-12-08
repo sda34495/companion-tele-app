@@ -4,18 +4,13 @@ import React from "react";
 import bgImage from "@/public/Albert_Einstein.jpg";
 import Link from "next/link";
 import Button from "@/app/components/Button";
-import dynamic from "next/dynamic";
-
-// Dynamically import Carousal with SSR disabled
-const Carousal = dynamic(() => import('@/app/components/Carousal'), { 
-  ssr: false 
-});
+import Carousal from "@/app/components/Carousal";
 
 const Detail: React.FC = () => {
   return (
     <div className="bg-[#efeff3] w-full sm:max-w-xs mx-auto flex flex-col min-h-screen">
       {/* Background Image */}
-      <Carousal />
+      <Carousal/>
       {/* <Image
         src={bgImage}
         alt={"bg-image"}
@@ -23,7 +18,7 @@ const Detail: React.FC = () => {
       /> */}
 
       <div className="bg-[#efeff3] w-full py-6 px-4 flex-grow mb-20">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           {/* Icon Placeholder */}
           <div className="text-center mb-10">
             <div className="w-16 h-16 overflow-hidden rounded-2xl mx-auto">
@@ -31,9 +26,6 @@ const Detail: React.FC = () => {
                 src={bgImage}
                 alt={"Ai character image"}
                 className="w-full"
-                width={64} // Explicit width
-                height={64} // Explicit height
-                layout="intrinsic" // Ensure layout type is set correctly
               />
             </div>
             <h2 className="text-2xl font-bold text-black">Albert</h2>
@@ -86,7 +78,15 @@ const Detail: React.FC = () => {
         {/* <hr className="border-gray-300 w-full "/> */}
       </div>
 
-      <Button name="Chat Now" href="" />
+      {/* <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
+        <div className="pb-5">
+          <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
+            Chat Now
+          </button>
+        </div>
+      </div> */}
+
+      <Button name='Chat Now' href='' />
     </div>
   );
 };
