@@ -37,10 +37,12 @@ const ResetChatSuccess: React.FC = () => {
           </div>
         </div>
         <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full max-w-sm mx-auto pb-[env(safe-area-inset-bottom)] ">
-        <div className="pb-5">        
+        <div className="pb-5">
+          <Link href='/explore'>
         <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
         Open Chat
         </button>
+          </Link>        
         </div>
       </div>
       </div>
