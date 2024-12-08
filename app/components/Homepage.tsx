@@ -81,20 +81,17 @@ const HomePage: React.FC = () => {
               </Link>
             </div>
           </div>
-          <hr className="border-gray-300 w-full mt-4 mb-5" />
         </div>
       </div>
+          <hr className="border-gray-300 w-full mt-4 mb-5" />
       {/* Button at the bottom */}
-
-    <div className="bg-red-500 absolute bottom-0 right-0 left-0">
-
-      <div className=" px-3">
+    
+      <div className=" w-full px-3">
         <Link href="/explore">
-          <button className="flex bg-[#007cff] justify-center w-full px-4 py-3 mb-5 font-semibold  rounded-lg text-white">
+          <button className="flex bg-[#007cff] justify-center w-full px-4 py-3 mb-5 font-semibold text-center rounded-lg text-white">
             Explore AI Characters
           </button>
         </Link>
-    </div>
       </div>
       
     </div>

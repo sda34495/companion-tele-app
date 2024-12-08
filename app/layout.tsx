@@ -49,8 +49,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       try {
         console.log("Initializing Telegram WebApp...");
 
-        // window.Telegram.WebApp.expand();
-        // console.log("Telegram WebApp expanded to full height.");
+        window.Telegram.WebApp.expand();
+        console.log("Telegram WebApp expanded to full height.");
 
         // Disable vertical swipes
         window.Telegram.WebApp.disableVerticalSwipes();
