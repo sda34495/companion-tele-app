@@ -24,19 +24,14 @@ declare global {
         expand: () => void;
         disableVerticalSwipes: () => void;
         enableVerticalSwipes: () => void;
-        HapticFeedback: {
-          impactOccurred: (style: "light" | "medium" | "heavy") => void;
-          notificationOccurred: (type: "error" | "success" | "warning") => void;
-          selectionChanged: () => void;
-        };
         BackButton: {
           close: () => void;
           show: () => void;
           hide: () => void;
           onClick: (callback: () => void) => void;
         };
-        close: () => void;
-        [key: string]: any;
+        close: () => void; // Closes the WebApp
+        [key: string]: any; // Include other methods/properties for flexibility
       };
     };
   }
@@ -46,16 +41,44 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const pathname = usePathname();
 
   const handleBack = () => {
-    // Trigger haptic feedback for a back action
-    if (window.Telegram?.WebApp.HapticFeedback) {
-      window.Telegram.WebApp.HapticFeedback.impactOccurred("medium");
-    }
     history.back(); // Go back to the previous page
   };
 
+
   useEffect(() => {
+    const addHapticFeedback = () => {
+      // Ensure the Telegram WebApp API and HapticFeedback are available
+      if (window.Telegram?.WebApp.HapticFeedback) {
+        const buttons = document.querySelectorAll("button");
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            window.Telegram?.WebApp.HapticFeedback.impactOccurred("light");
+          });
+        });
+      }
+    };
+
+    // Call the function on component mount
+    addHapticFeedback();
+
+    // Cleanup function to remove event listeners
+    return () => {
+      const buttons = document.querySelectorAll("button");
+      buttons.forEach((button) => {
+        button.removeEventListener("click", () => {
+          if (window.Telegram?.WebApp.HapticFeedback) {
+            window.Telegram.WebApp.HapticFeedback.impactOccurred("light");
+          }
+        });
+      });
+    };
+  }, [pathname]);
+
+  useEffect(() => {
+    
     if (typeof window !== "undefined" && window.Telegram?.WebApp) {
       try {
+        
         console.log("Initializing Telegram WebApp...");
 
         window.Telegram.WebApp.expand();
@@ -73,15 +96,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           // Add an event listener to close the app when the MainButton is clicked
           window.Telegram.MainButton.onClick(() => {
-            if (window.Telegram?.WebApp.HapticFeedback) {
-              window.Telegram.WebApp.HapticFeedback.notificationOccurred("success");
-            }
             window.Telegram?.WebApp.close();
           });
 
           // Hide the back button on the root page
           window.Telegram.WebApp.BackButton.hide();
           console.log("Close button shown, back button hidden.");
+          
         } else {
           // Show back button on all other pages
           window.Telegram.WebApp.BackButton.show();
@@ -90,7 +111,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           // Handle back button click
           window.Telegram.WebApp.BackButton.onClick(() => {
             console.log("Back button clicked!");
-            handleBack(); // Trigger haptic feedback and navigate back
+            // Implement custom back navigation logic
+            handleBack();
           });
         }
 
@@ -111,8 +133,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         window.Telegram.WebApp.BackButton.hide();
       }
     };
-  }, [pathname]);
 
+  }, [pathname]); // Dependency array with pathname to rerun on route change
 
   return (
     <html lang="en">
