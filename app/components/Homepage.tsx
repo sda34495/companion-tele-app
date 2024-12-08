@@ -4,7 +4,7 @@ import React from "react";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="bg-[#ffffff] relative w-full mx-auto sm:max-w-xs flex flex-col h-screen">
+    <div className="bg-[#efeff3] relative w-full mx-auto sm:max-w-xs flex flex-col h-screen">
       <div className=" pb-20 flex-grow">
         <div className="flex mt-14 flex-col items-center">
           {/* Icon Placeholder */}
