@@ -211,6 +211,90 @@ const Settings: React.FC = () => {
           </div>
         </div>
 
+
+
+        <hr className="mt-5 border-gray-300" />
+
+{/* Help & Legal */}
+<div className="mt-6 px-3">
+  <h3 className="text-sm ml-2 text-gray-500 font-medium mb-2">
+    HELP & LEGAL
+  </h3>
+  <div className=" overflow-hidden rounded-lg bg-white ">
+    <button className="flex hover:bg-gray-300 items-center justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+      Imprint
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        className="size-5 text-[#787878]"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </button>
+    <hr className="border- border-gray-200 mx-4" /> 
+    <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+      Privacy Policy
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        className="size-5 text-[#787878]"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </button>
+    <hr className="border- border-gray-200 mx-4" /> 
+    <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+      Terms of Use
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        className="size-5 text-[#787878]"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </button>
+    <hr className="border- border-gray-200 mx-4" /> 
+    <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+      Contact Support
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        className="size-5 text-[#787878]"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+
         {/* <hr className="mt-5 border-gray-300" /> */}
 
         {/* Help & Legal */}
