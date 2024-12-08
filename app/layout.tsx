@@ -3,8 +3,6 @@ import { useEffect } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
 import { usePathname } from "next/navigation";
-import { HapticProvider } from "./context/hapticContext"
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -34,9 +32,7 @@ declare global {
         close: () => void; // Closes the WebApp
         [key: string]: any; // Include other methods/properties for flexibility
       };
-      HapticFeedback?: {
-        impactOccurred: (style: 'light' | 'medium' | 'heavy') => void;
-      };
+     
     };
   }
 }
@@ -97,7 +93,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }, [pathname]); // Dependency array with pathname to rerun on route change
 
   return (
-    <HapticProvider>
+ 
 
     <html lang="en">
       <head>
@@ -108,6 +104,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
       </body>
     </html>
-    </HapticProvider>
   );
 }
