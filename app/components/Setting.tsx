@@ -309,8 +309,19 @@ const Settings: React.FC = () => {
         {/* <hr className="mt-5 border-gray-300" /> */}
 
       </div>
-        <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 p-5 w-full max-w-sm mx-auto pb-[env(safe-area-inset-bottom)] ">
-        <button className="flex mx-auto bg-[#007cff] items-center justify-center py-3  w-full text-white rounded-lg text-lg font-semibold">
+        <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 px-4 py-4 w-full max-w-sm mx-auto pb-[env(safe-area-inset-bottom)] ">
+        <button className=" bg-[#007cff]   px-3 py-3
+    mx-2 my-2
+    bg-[var(--tg-theme-button-color)]
+    text-[var(--tg-theme-button-text-color)]
+    border-none
+    outline-none
+    cursor-pointer
+    text-center
+    no-underline
+    inline-block
+    text-base
+    rounded-lg">
           Become an Affiliate
         </button>
       </div>
