@@ -85,6 +85,6 @@ body {
   overflow: hidden;
 }
 
-bpdy {
+body {
   @apply bg-black
 }
