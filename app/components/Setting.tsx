@@ -310,7 +310,7 @@ const Settings: React.FC = () => {
 
       </div>
         <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 p-5 w-full max-w-sm mx-auto pb-[env(safe-area-inset-bottom)] ">
-        <button className="flex mx-auto bg-[#007cff] items-center justify-center py-3  w-full text-white mb-10 rounded-lg pb-[env(safe-area-inset-bottom)]  text-lg font-semibold">
+        <button className="flex mx-auto bg-[#007cff] items-center justify-center py-3  w-full text-white mb-10 rounded-lg text-lg font-semibold">
           Become an Affiliate
         </button>
       </div>
