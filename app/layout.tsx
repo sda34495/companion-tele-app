@@ -112,28 +112,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
-
-        <div
-            className="fixed bottom-0 left-0 right-0 bg-white"
-            style={{
-              paddingBottom: "env(safe-area-inset-bottom)", // Safe area for home indicator
-            }}
-          >
-            <button
-              className="w-full py-4 text-center text-white bg-blue-600"
-              style={{
-                borderRadius: "12px",
-                margin: "8px",
-                maxWidth: "640px",
-                display: "block",
-                marginLeft: "auto",
-                marginRight: "auto",
-              }}
-            >
-              Become an Affiliate
-            </button>
-          </div>
-
       </body>
     </html>
   );
