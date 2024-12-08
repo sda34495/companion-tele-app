@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
 import { usePathname } from "next/navigation";
+import { HapticProvider } from "./context/hapticContext"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,9 +34,9 @@ declare global {
         close: () => void; // Closes the WebApp
         [key: string]: any; // Include other methods/properties for flexibility
       };
-    };
-    HapticFeedback?: {
-      impactOccurred: (style: 'light' | 'medium' | 'heavy') => void;
+      HapticFeedback?: {
+        impactOccurred: (style: 'light' | 'medium' | 'heavy') => void;
+      };
     };
   }
 }
@@ -45,13 +46,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   const handleBack = () => {
     history.back(); // Go back to the previous page
-  };
-
-  // Haptic feedback function
-  const triggerHapticFeedback = (style: 'light' | 'medium' | 'heavy') => {
-    if (window.HapticFeedback) {
-      window.HapticFeedback.impactOccurred(style);
-    }
   };
 
   useEffect(() => {
@@ -72,12 +66,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           window.Telegram.MainButton.color = "#FF0000"; // Optional: Change button color to red
           window.Telegram.MainButton.show();
 
-          // Add an event listener to close the app when the MainButton is clicked
-          window.Telegram.MainButton.onClick(() => {
-            triggerHapticFeedback('light'); // Trigger haptic feedback when MainButton is clicked
-            window.Telegram?.WebApp.close();
-          });
-
           // Hide the back button on the root page
           window.Telegram.WebApp.BackButton.hide();
           console.log("Close button shown, back button hidden.");
@@ -86,14 +74,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           // Show back button on all other pages
           window.Telegram.WebApp.BackButton.show();
           console.log("Back button enabled.");
-
-          // Handle back button click
-          window.Telegram.WebApp.BackButton.onClick(() => {
-            console.log("Back button clicked!");
-            // Implement custom back navigation logic
-            triggerHapticFeedback('light'); // Trigger haptic feedback when back button is clicked
-            handleBack();
-          });
         }
 
         console.log("Telegram WebApp API is ready.");
@@ -117,6 +97,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }, [pathname]); // Dependency array with pathname to rerun on route change
 
   return (
+    <HapticProvider>
+
     <html lang="en">
       <head>
         {/* Add Telegram SDK script */}
@@ -126,5 +108,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
       </body>
     </html>
+    </HapticProvider>
   );
 }
