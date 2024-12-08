@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import hearts from "@/public/hearts.svg";
 import Link from "next/link";
+import Button from "./Button";
 
 const PaymentScreen: React.FC = () => {
   return (
@@ -68,14 +69,8 @@ const PaymentScreen: React.FC = () => {
         </div>
       </div>
 
-      {/* Explore Button */}
-      {/* <Link href='./explore'>
-      <button className="flex bg-[#007cff] justify-center w-full px-4 py-3 mt-14  font-semibold text-center rounded-lg  text-white">
-            Explore AI Characters
-          </button>
-      </Link> */}
 
-      <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
+      {/* <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
         <div className="pb-5">
           <Link href="/explore">
             <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
@@ -83,7 +78,9 @@ const PaymentScreen: React.FC = () => {
             </button>
           </Link>
         </div>
-      </div>
+      </div> */}
+
+      <Button name='Explore AI Characters' href='/explore' />
     </div>
   );
 };

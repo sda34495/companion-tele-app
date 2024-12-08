@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import Button from "./Button";
 
 const HomePage: React.FC = () => {
   return (
@@ -84,17 +85,8 @@ const HomePage: React.FC = () => {
         </div>
       </div>
       <hr className="border-gray-300 w-full mt-4 mb-5" />
-      {/* Button at the bottom */}
 
-      {/* <div className=" w-full px-3">
-        <Link href="/explore">
-          <button className="flex bg-[#007cff] justify-center w-full px-4 py-3 mb-5 font-semibold text-center rounded-lg text-white">
-            Explore AI Characters
-          </button>
-        </Link>
-      </div> */}
-
-      <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
+      {/* <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
         <div className="pb-5">
           <Link href="/explore">
             <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
@@ -102,7 +94,9 @@ const HomePage: React.FC = () => {
             </button>
           </Link>
         </div>
-      </div>
+      </div> */}
+
+      <Button name= 'Explore AI Characters' href='/explore' />
     </div>
   );
 };

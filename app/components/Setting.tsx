@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import Button from "./Button";
 
 const Settings: React.FC = () => {
   return (
@@ -286,26 +287,18 @@ const Settings: React.FC = () => {
           </div>
         </div>
 
-        {/* <hr className="mt-5 border-gray-300" /> */}
-
-        {/* Help & Legal */}
-        {/* <div className="mt-6 px-3">
-          <div className="divide-y divide-gray-200 border border-gray-200 rounded-lg bg-white mb-">
-            <button className="flex bg-[#007cff] justify-center  w-full px-4 py-3  font-semibold text-center rounded-lg text-white">
-            Become an Affiliate
-            </button>
-          </div>
-        </div> */}
-
+      
         {/* <hr className="mt-5 border-gray-300" /> */}
       </div>
-      <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
+      {/* <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
         <div className="pb-5">
           <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
             Become an Affiliate
           </button>
         </div>
-      </div>
+      </div> */}
+
+      <Button name='Become an Affiliate' href='' />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 "use client";
+import Button from "@/app/components/Button";
 import Link from "next/link";
 import React from "react";
 
@@ -17,20 +18,9 @@ const ResetChatSuccess: React.FC = () => {
               go to “More,” and select “Clear Messages.”
             </p>
           </div>
-
-          {/* <button className="w-[335px] mx-auto  bg-[#007cff]  text-white py-3   rounded-lg font-semibold ">
-            Open Chat
-            
-            </button>
-
-            <Link href='./explore'>
-            <button className="w-[335px] mx-auto  mt-2 bg-white  text-black py-3   rounded-lg font-semibold ">
-            Explore more AI Characters
-            </button>
-            </Link> */}
         </div>
       </div>
-      <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
+      {/* <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
         <div className="pb-5">
           <Link href="/explore">
             <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
@@ -38,7 +28,9 @@ const ResetChatSuccess: React.FC = () => {
             </button>
           </Link>
         </div>
-      </div>
+      </div> */}
+
+      <Button name='Open Chat' href="/explore" />
     </div>
   );
 };

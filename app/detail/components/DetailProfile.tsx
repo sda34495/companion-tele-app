@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import bgImage from "@/public/Albert_Einstein.jpg";
 import Link from "next/link";
+import Button from "@/app/components/Button";
 
 const Detail: React.FC = () => {
   return (
@@ -75,32 +76,15 @@ const Detail: React.FC = () => {
         {/* <hr className="border-gray-300 w-full "/> */}
       </div>
 
-      {/* <div className="divide-y rounded-lg mt-6 px-3 ">
-          <Link href="">
-            <button className="flex bg-[#007cff] justify-center mb-3  w-full px-4 py-3  font-semibold text-center rounded-lg text-white">
-            Chat Now
-            </button>
-          </Link>
-
-
-          <Link href="">
-            <button className="flex bg-white text-black justify-center  w-full px-4 py-3 mb-5 font-semibold text-center rounded-lg">
-            Back to all Characters
-            </button>
-          </Link>
-
-
-
-          
-        </div> */}
-
-      <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
+      {/* <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
         <div className="pb-5">
           <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
             Chat Now
           </button>
         </div>
-      </div>
+      </div> */}
+
+      <Button name='Chat Now' href='' />
     </div>
   );
 };
