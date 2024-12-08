@@ -45,34 +45,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
 
-  useEffect(() => {
-    const addHapticFeedback = () => {
-      // Ensure the Telegram WebApp API and HapticFeedback are available
-      if (window.Telegram?.WebApp.HapticFeedback) {
-        const buttons = document.querySelectorAll("button");
-        buttons.forEach((button) => {
-          button.addEventListener("click", () => {
-            window.Telegram?.WebApp.HapticFeedback.impactOccurred("light");
-          });
-        });
-      }
-    };
+  // useEffect(() => {
+  //   const addHapticFeedback = () => {
+  //     // Ensure the Telegram WebApp API and HapticFeedback are available
+  //     if (window.Telegram?.WebApp.HapticFeedback) {
+  //       const buttons = document.querySelectorAll("button");
+  //       buttons.forEach((button) => {
+  //         button.addEventListener("click", () => {
+  //           window.Telegram?.WebApp.HapticFeedback.impactOccurred("light");
+  //         });
+  //       });
+  //     }
+  //   };
 
-    // Call the function on component mount
-    addHapticFeedback();
+  //   // Call the function on component mount
+  //   addHapticFeedback();
 
-    // Cleanup function to remove event listeners
-    return () => {
-      const buttons = document.querySelectorAll("button");
-      buttons.forEach((button) => {
-        button.removeEventListener("click", () => {
-          if (window.Telegram?.WebApp.HapticFeedback) {
-            window.Telegram.WebApp.HapticFeedback.impactOccurred("light");
-          }
-        });
-      });
-    };
-  }, [pathname]);
+  //   // Cleanup function to remove event listeners
+  //   return () => {
+  //     const buttons = document.querySelectorAll("button");
+  //     buttons.forEach((button) => {
+  //       button.removeEventListener("click", () => {
+  //         if (window.Telegram?.WebApp.HapticFeedback) {
+  //           window.Telegram.WebApp.HapticFeedback.impactOccurred("light");
+  //         }
+  //       });
+  //     });
+  //   };
+  // }, [pathname]);
 
   useEffect(() => {
     
