@@ -10,8 +10,8 @@ const Detail: React.FC = () => {
       {/* Background Image */}
       <Image src={bgImage} alt={"bg-image"} className="w-full h-[250px] object-cover " />
 
-      <div className="bg-[#efeff3] w-full py-6 px-4 flex-grow">
-        <div className="flex flex-col items-center">
+      <div className="bg-[#efeff3] w-full py-6 px-4 flex-grow mb-20">
+        <div className="flex flex-col items-center ">
           {/* Icon Placeholder */}
           <div className="text-center mb-10">
             <div className="w-16 h-16 overflow-hidden rounded-2xl mx-auto">
@@ -61,9 +61,10 @@ const Detail: React.FC = () => {
 
           {/* Bottom Buttons */}
         </div>
+          {/* <hr className="border-gray-300 w-full "/> */}
       </div>
-          <hr className="border-gray-300 w-full mt-2" />
-          <div className="divide-y rounded-lg mt-6 px-3 ">
+
+          {/* <div className="divide-y rounded-lg mt-6 px-3 ">
           <Link href="">
             <button className="flex bg-[#007cff] justify-center mb-3  w-full px-4 py-3  font-semibold text-center rounded-lg text-white">
             Chat Now
@@ -80,7 +81,18 @@ const Detail: React.FC = () => {
 
 
           
+        </div> */}
+
+
+<div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full max-w-sm mx-auto pb-[env(safe-area-inset-bottom)] ">
+        <div className="pb-5">      
+        <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
+        Chat Now
+        </button>
         </div>
+      </div>
+
+
     </div>
   );
 };
