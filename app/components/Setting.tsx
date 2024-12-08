@@ -12,99 +12,92 @@ const Settings: React.FC = () => {
             PROFILE DETAILS
           </h3>
           <div className=" overflow-hidden rounded-lg  bg-white">
-
-          <div className="flex flex-row items-start hover:bg-gray-300 justify-between px-4 py-3">
-  <h1 className="font-medium text-gray-900">Name</h1>
-  <div className="flex items-center space-x-2">
-    <span className="text-gray-500">Lennard</span>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      className="size-5 text-[#787878]"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="m8.25 4.5 7.5 7.5-7.5 7.5"
-      />
-    </svg>
-  </div>
-</div>
-              <hr className="border- border-gray-200 mx-4" />  
-
-            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
-            <h1 className="  font-medium text-gray-900">
-              Gender
-              </h1>
+            <div className="flex flex-row items-start hover:bg-gray-300 justify-between px-4 py-3">
+              <h1 className="font-medium text-gray-900">Name</h1>
               <div className="flex items-center space-x-2">
-
-              <span className="text-gray-500">Male</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-5 text-[#787878]"
+                <span className="text-gray-500">Lennard</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="size-5 text-[#787878]"
                 >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
                   />
-              </svg>
-                  </div>
-                  </div>
-                  <hr className="border- border-gray-200 mx-4" /> 
-              
-                  <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
-            <h1 className="  font-medium text-gray-900">
-            Email </h1>
-            <div className="flex items-center space-x-2">
-            <span className="text-gray-500 ">mail@gmail.com</span>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-5 text-[#787878]"
-                >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  />
-              </svg>            
-                  </div>            
+                </svg>
+              </div>
             </div>
-            <hr className="border- border-gray-200 mx-4" /> 
+            <hr className="border- border-gray-200 mx-4" />
 
             <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
-            <h1 className=" font-medium text-gray-900">
-            Language </h1>
-            <div className="flex items-center space-x-2">
-
-            <span className="text-gray-500 self-end ">English</span>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-5 text-[#787878]"
+              <h1 className="  font-medium text-gray-900">Gender</h1>
+              <div className="flex items-center space-x-2">
+                <span className="text-gray-500">Male</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="size-5 text-[#787878]"
                 >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
                   />
-              </svg>            
+                </svg>
+              </div>
             </div>
-                  </div>
+            <hr className="border- border-gray-200 mx-4" />
+
+            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+              <h1 className="  font-medium text-gray-900">Email </h1>
+              <div className="flex items-center space-x-2">
+                <span className="text-gray-500 ">mail@gmail.com</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="size-5 text-[#787878]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="border- border-gray-200 mx-4" />
+
+            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+              <h1 className=" font-medium text-gray-900">Language </h1>
+              <div className="flex items-center space-x-2">
+                <span className="text-gray-500 self-end ">English</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="size-5 text-[#787878]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -154,7 +147,7 @@ const Settings: React.FC = () => {
                 />
               </svg>
             </button>
-            <hr className="border- border-gray-200 mx-4" /> 
+            <hr className="border- border-gray-200 mx-4" />
             <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Privacy Policy
               <svg
@@ -172,7 +165,7 @@ const Settings: React.FC = () => {
                 />
               </svg>
             </button>
-            <hr className="border- border-gray-200 mx-4" /> 
+            <hr className="border- border-gray-200 mx-4" />
             <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Terms of Use
               <svg
@@ -190,7 +183,7 @@ const Settings: React.FC = () => {
                 />
               </svg>
             </button>
-            <hr className="border- border-gray-200 mx-4" /> 
+            <hr className="border- border-gray-200 mx-4" />
             <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Contact Support
               <svg
@@ -211,89 +204,87 @@ const Settings: React.FC = () => {
           </div>
         </div>
 
-
-
         <hr className="mt-5 border-gray-300" />
 
-{/* Help & Legal */}
-<div className="mt-6 px-3">
-  <h3 className="text-sm ml-2 text-gray-500 font-medium mb-2">
-    HELP & LEGAL
-  </h3>
-  <div className=" overflow-hidden rounded-lg bg-white ">
-    <button className="flex hover:bg-gray-300 items-center justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
-      Imprint
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className="size-5 text-[#787878]"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m8.25 4.5 7.5 7.5-7.5 7.5"
-        />
-      </svg>
-    </button>
-    <hr className="border- border-gray-200 mx-4" /> 
-    <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
-      Privacy Policy
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className="size-5 text-[#787878]"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m8.25 4.5 7.5 7.5-7.5 7.5"
-        />
-      </svg>
-    </button>
-    <hr className="border- border-gray-200 mx-4" /> 
-    <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
-      Terms of Use
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className="size-5 text-[#787878]"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m8.25 4.5 7.5 7.5-7.5 7.5"
-        />
-      </svg>
-    </button>
-    <hr className="border- border-gray-200 mx-4" /> 
-    <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
-      Contact Support
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className="size-5 text-[#787878]"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m8.25 4.5 7.5 7.5-7.5 7.5"
-        />
-      </svg>
-    </button>
-  </div>
-</div>
+        {/* Help & Legal */}
+        <div className="mt-6 px-3">
+          <h3 className="text-sm ml-2 text-gray-500 font-medium mb-2">
+            HELP & LEGAL
+          </h3>
+          <div className=" overflow-hidden rounded-lg bg-white ">
+            <button className="flex hover:bg-gray-300 items-center justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+              Imprint
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="size-5 text-[#787878]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+            <hr className="border- border-gray-200 mx-4" />
+            <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+              Privacy Policy
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="size-5 text-[#787878]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+            <hr className="border- border-gray-200 mx-4" />
+            <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+              Terms of Use
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="size-5 text-[#787878]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+            <hr className="border- border-gray-200 mx-4" />
+            <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+              Contact Support
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="size-5 text-[#787878]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
 
         {/* <hr className="mt-5 border-gray-300" /> */}
 
@@ -307,14 +298,12 @@ const Settings: React.FC = () => {
         </div> */}
 
         {/* <hr className="mt-5 border-gray-300" /> */}
-
       </div>
-        <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full max-w-sm mx-auto pb-[env(safe-area-inset-bottom)] ">
+      <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
         <div className="pb-5">
-
-        <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
-          Become an Affiliate
-        </button>
+          <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
+            Become an Affiliate
+          </button>
         </div>
       </div>
     </div>

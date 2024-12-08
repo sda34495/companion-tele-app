@@ -1,8 +1,8 @@
-'use client';
-import Image from 'next/image';
-import React from 'react';
-import hearts from '@/public/hearts.svg'
-import Link from 'next/link';
+"use client";
+import Image from "next/image";
+import React from "react";
+import hearts from "@/public/hearts.svg";
+import Link from "next/link";
 
 const PaymentScreen: React.FC = () => {
   return (
@@ -13,15 +13,17 @@ const PaymentScreen: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="w-full h-full rounded-lg flex items-center justify-center">
             {/* Placeholder for Heart Image */}
-           
-           <Image src={hearts} alt='heart image' className=''/>
+
+            <Image src={hearts} alt="heart image" className="" />
           </div>
           <div className="ml-4 ">
             <h2 className=" font-semibold text-xl text-black">200 Hearts</h2>
             <p className="text-sm text-gray-500">
               This is a short description for the AI character
             </p>
-            <p className="text-sm font-medium text-gray-500">Save X% only today!</p>
+            <p className="text-sm font-medium text-gray-500">
+              Save X% only today!
+            </p>
           </div>
         </div>
 
@@ -73,14 +75,13 @@ const PaymentScreen: React.FC = () => {
           </button>
       </Link> */}
 
-
-<div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full max-w-sm mx-auto pb-[env(safe-area-inset-bottom)] ">
+      <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
         <div className="pb-5">
-        <Link href="/explore">
-        <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
-        Explore AI Characters
-        </button>
-        </Link>
+          <Link href="/explore">
+            <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
+              Explore AI Characters
+            </button>
+          </Link>
         </div>
       </div>
     </div>
