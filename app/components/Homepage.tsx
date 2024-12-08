@@ -3,18 +3,9 @@ import Link from "next/link";
 import React from "react";
 
 const HomePage: React.FC = () => {
-
-
-  const handleButtonClick = () => {
-    // Check if Haptic Feedback is available in the global window object
-    if (window.HapticFeedback) {
-      // Trigger haptic feedback impact effect
-      window.HapticFeedback.impactOccurred("light"); // You can choose the style, such as 'light', 'medium', or 'heavy'
-    }
-    // Optional: You can log to see if it's being triggered
-    console.log("Button clicked, haptic feedback triggered!");
-  };
-
+  function triggerHapticFeedback(arg0: string): void {
+    throw new Error("Function not implemented.");
+  }
 
   return (
     <div className="bg-[#efeff3] relative w-full mx-auto sm:max-w-xs flex flex-col h-screen">
@@ -110,8 +101,9 @@ const HomePage: React.FC = () => {
 <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full max-w-sm mx-auto pb-[env(safe-area-inset-bottom)] ">
         <div className="pb-5">
         <Link href="/explore">
-        <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold"
-        onClick={handleButtonClick}>
+        <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold" 
+        onClick={() => triggerHapticFeedback('medium')} 
+         >
         Explore AI Characters
         </button>
         </Link>

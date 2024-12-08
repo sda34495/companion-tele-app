@@ -15,7 +15,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-// Declare the Telegram WebApp API globally
+// Declare the Telegram WebApp API and HapticFeedback API globally
 declare global {
   interface Window {
     Telegram?: {
@@ -34,6 +34,9 @@ declare global {
         [key: string]: any; // Include other methods/properties for flexibility
       };
     };
+    HapticFeedback?: {
+      impactOccurred: (style: 'light' | 'medium' | 'heavy') => void;
+    };
   }
 }
 
@@ -42,6 +45,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   const handleBack = () => {
     history.back(); // Go back to the previous page
+  };
+
+  // Haptic feedback function
+  const triggerHapticFeedback = (style: 'light' | 'medium' | 'heavy') => {
+    if (window.HapticFeedback) {
+      window.HapticFeedback.impactOccurred(style);
+    }
   };
 
   useEffect(() => {
@@ -64,6 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           // Add an event listener to close the app when the MainButton is clicked
           window.Telegram.MainButton.onClick(() => {
+            triggerHapticFeedback('light'); // Trigger haptic feedback when MainButton is clicked
             window.Telegram?.WebApp.close();
           });
 
@@ -80,6 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           window.Telegram.WebApp.BackButton.onClick(() => {
             console.log("Back button clicked!");
             // Implement custom back navigation logic
+            triggerHapticFeedback('light'); // Trigger haptic feedback when back button is clicked
             handleBack();
           });
         }
