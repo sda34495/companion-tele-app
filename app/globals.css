@@ -84,7 +84,3 @@ body {
   height: 0;
   overflow: hidden;
 }
-
-body {
-  @apply bg-black
-}
