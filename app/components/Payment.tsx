@@ -4,6 +4,10 @@ import React from 'react';
 import hearts from '@/public/hearts.svg'
 import headerImage from '@/public/mainHeart.jpg'
 import Link from 'next/link';
+import heart1 from '@/public/Heart1.jpg'
+import heart2 from '@/public/Heart2.jpg'
+import heart3 from '@/public/Heart3.jpg'
+import heart4 from '@/public/Heart4.jpg'
 
 const HeartsPricing: React.FC = () => {
   return (
@@ -20,10 +24,10 @@ const HeartsPricing: React.FC = () => {
       {/* Pricing Options */}
       <div className="space-y-3 mb-8">
         {[
-          { hearts: 200, price: "5.99$", discount: "save 10%", image: '' },
-          { hearts: 500, price: "99.99$", discount: "save 20%" },
-          { hearts: 1400, price: "5.99$", discount: "save 30%" },
-          { hearts: 3500, price: "5.99$", discount: "save 40%" }
+          { hearts: 200, price: "5.99$", discount: "save 10%", image: heart1 },
+          { hearts: 500, price: "99.99$", discount: "save 20%", image: heart2 },
+          { hearts: 1400, price: "5.99$", discount: "save 30%", image: heart3 },
+          { hearts: 3500, price: "5.99$", discount: "save 40%", image: heart4 }
         ].map((item, index) => (
           
           <Link 
@@ -33,7 +37,7 @@ const HeartsPricing: React.FC = () => {
           >
             <div className="flex items-center space-x-4">
               <div className=" rounded-full w-28 ">
-                <Image src={hearts} alt='hearts' className='' priority/>
+                <Image src={item.image} alt='hearts' className='rounded-lg'  priority/>
                 
               </div>
               <div>
