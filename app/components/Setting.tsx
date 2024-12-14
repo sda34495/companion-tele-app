@@ -131,7 +131,9 @@ const Settings: React.FC = () => {
             HELP & LEGAL
           </h3>
           <div className=" overflow-hidden rounded-lg bg-white ">
-            <Link href="https://www.cloud-companions.com/legal/imprint">
+
+            {/* <Link href="https://www.cloud-companions.com/legal/imprint"> */}
+            <Link href="">
               <button className="flex hover:bg-gray-300 items-center justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
                 Imprint
                 <svg
@@ -154,7 +156,8 @@ const Settings: React.FC = () => {
 
             <hr className="border- border-gray-200 mx-4" />
 
-            <Link href='https://www.cloud-companions.com/legal/privacy-policy'>
+            {/* <Link href='https://www.cloud-companions.com/legal/privacy-policy'> */}
+            <Link href=''>
             <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Privacy Policy
               <svg
@@ -178,7 +181,8 @@ const Settings: React.FC = () => {
             <hr className="border- border-gray-200 mx-4" />
 
 
-            <Link href='https://www.cloud-companions.com/legal/terms-of-use'>
+            {/* <Link href='https://www.cloud-companions.com/legal/terms-of-use'> */}
+            <Link href=''>
             <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Terms of Use
               <svg
@@ -201,7 +205,8 @@ const Settings: React.FC = () => {
 
             <hr className="border- border-gray-200 mx-4" />
 
-            <Link href='https://t.me/lennardklein'>
+            {/* <Link href='https://t.me/lennardklein'> */}
+            <Link href=''>
             <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Contact Support
               <svg

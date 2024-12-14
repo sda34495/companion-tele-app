@@ -63,7 +63,7 @@ const PaymentScreen: React.FC = () => {
             />
           </svg>
         </button>
-        <div className="py-3 px-4 text-black flex justify-between">
+        <div className="py-3 mb-10 px-4 text-black flex justify-between">
           <span>Name</span>
           <span className="font-medium text-gray-600">LENNARD KLEIN</span>
         </div>
