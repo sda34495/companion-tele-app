@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import hearts from '@/public/hearts.svg'
-import headerImage from '@/public/headerHeart.svg'
+import headerImage from '@/public/mainHeart.jpg'
 import Link from 'next/link';
 
 const HeartsPricing: React.FC = () => {
@@ -20,11 +20,10 @@ const HeartsPricing: React.FC = () => {
       {/* Pricing Options */}
       <div className="space-y-3 mb-8">
         {[
-          { hearts: 200, price: "5.99$", discount: "save 10%" },
+          { hearts: 200, price: "5.99$", discount: "save 10%", image: '' },
           { hearts: 500, price: "99.99$", discount: "save 20%" },
           { hearts: 1400, price: "5.99$", discount: "save 30%" },
-          { hearts: 3500, price: "5.99$", discount: "save 40%" },
-          { hearts: 8000, price: "99.99$", discount: "save 50%" },
+          { hearts: 3500, price: "5.99$", discount: "save 40%" }
         ].map((item, index) => (
           
           <Link 
