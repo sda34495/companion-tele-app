@@ -45,7 +45,7 @@ const PaymentScreen: React.FC = () => {
       </div>
 
       {/* Payment Details Section */}
-      <div className="bg-white w-full rounded-lg shadow-md mt-4 ">
+      <div className="bg-white w-full mb-20 rounded-lg shadow-md mt-4 ">
         <button className="w-full flex justify-between items-center py-3 px-4 border-b border-gray-200 text-black">
           <span>Payment Method</span>
           <svg
@@ -63,7 +63,7 @@ const PaymentScreen: React.FC = () => {
             />
           </svg>
         </button>
-        <div className="py-3 mb-10 px-4 text-black flex justify-between">
+        <div className="py-3  px-4 text-black flex justify-between">
           <span>Name</span>
           <span className="font-medium text-gray-600">LENNARD KLEIN</span>
         </div>
