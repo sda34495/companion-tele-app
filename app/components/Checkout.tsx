@@ -4,8 +4,18 @@ import React from "react";
 import hearts from "@/public/hearts.svg";
 import Link from "next/link";
 import Button from "./Button";
+import { useSearchParams } from 'next/navigation';
 
 const PaymentScreen: React.FC = () => {
+
+  const searchParams = useSearchParams();
+
+  // Extract parameters
+  const hearts = searchParams.get('hearts');
+  const price = searchParams.get('price');
+  const discount = searchParams.get('discount');
+  const image = searchParams.get('image');
+  
   return (
     <div className="bg-[#efeff3] relative w-full sm:max-w-xs mx-auto flex-grow  py-6 px-4">
       {/* Card Section */}
@@ -15,15 +25,23 @@ const PaymentScreen: React.FC = () => {
           <div className="w-full h-full rounded-lg flex items-center justify-center">
             {/* Placeholder for Heart Image */}
 
-            <Image src={hearts} alt="heart image" className="" />
+            {image && (
+              <Image
+                src={image} // Image path should be passed as a full URL or path to public assets
+                alt="heart image"
+                width={140}
+                height={100}
+                className="rounded-lg"
+              />
+            )}
           </div>
           <div className="ml-4 ">
-            <h2 className=" font-semibold text-xl text-black">200 Hearts</h2>
+            <h2 className=" font-semibold text-xl text-black">{hearts} Hearts</h2>
             <p className="text-sm text-gray-500">
               This is a short description for the AI character
             </p>
             <p className="text-sm font-medium text-gray-500">
-              Save X% only today!
+              Save {discount} only today!
             </p>
           </div>
         </div>
@@ -40,7 +58,7 @@ const PaymentScreen: React.FC = () => {
         {/* Total Section */}
         <div className="flex justify-between items-center text-black font-medium ">
           <span>Total</span>
-          <span>$5.99</span>
+          <span>{price}</span>
         </div>
       </div>
 
