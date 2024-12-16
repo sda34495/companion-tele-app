@@ -2,6 +2,8 @@
 import Button from "@/app/components/Button";
 import Link from "next/link";
 import React from "react";
+import bgImage from '@/public/icon_success.png'
+import Image from "next/image";
 
 const ResetChatSuccess: React.FC = () => {
   return (
@@ -10,6 +12,13 @@ const ResetChatSuccess: React.FC = () => {
         <div className="flex flex-col absolute top-52 right-0 left-0 px-2 items-center">
           {/* Icon Placeholder */}
           <div className="text-center mb-10">
+          <div className="w-16 h-16 overflow-hidden animate-shake rounded-2xl mx-auto">
+              <Image
+                src={bgImage}
+                alt={"Ai character image"}
+                className="w-full"
+              />
+            </div>
             <h2 className="text-2xl font-semibold tracking-tighter leading-tight mt-2 px-4 text-black">
               Chat memory has been reset and you can start a new conversation!
             </h2>
