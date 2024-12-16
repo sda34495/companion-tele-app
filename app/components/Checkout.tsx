@@ -1,33 +1,28 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { Suspense } from "react";
 import hearts from "@/public/hearts.svg";
 import Link from "next/link";
 import Button from "./Button";
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams } from "next/navigation";
 
-const PaymentScreen: React.FC = () => {
-
+const PaymentDetails: React.FC = () => {
   const searchParams = useSearchParams();
 
   // Extract parameters
-  const hearts = searchParams.get('hearts');
-  const price = searchParams.get('price');
-  const discount = searchParams.get('discount');
-  const image = searchParams.get('image');
-  
+  const hearts = searchParams.get("hearts");
+  const price = searchParams.get("price");
+  const discount = searchParams.get("discount");
+  const image = searchParams.get("image");
+
   return (
-    <div className="bg-[#efeff3] relative w-full sm:max-w-xs mx-auto flex-grow  py-6 px-4">
-      {/* Card Section */}
-      <div className="bg-white w-full rounded-lg  p-4  space-y-4">
-        {/* Header */}
+    <div className="bg-[#efeff3] relative w-full sm:max-w-xs mx-auto flex-grow py-6 px-4">
+      <div className="bg-white w-full rounded-lg p-4 space-y-4">
         <div className="flex items-center justify-between">
           <div className="w-full h-full rounded-lg flex items-center justify-center">
-            {/* Placeholder for Heart Image */}
-
             {image && (
               <Image
-                src={image} // Image path should be passed as a full URL or path to public assets
+                src={image}
                 alt="heart image"
                 width={140}
                 height={100}
@@ -35,8 +30,8 @@ const PaymentScreen: React.FC = () => {
               />
             )}
           </div>
-          <div className="ml-4 ">
-            <h2 className=" font-semibold text-xl text-black">{hearts} Hearts</h2>
+          <div className="ml-4">
+            <h2 className="font-semibold text-xl text-black">{hearts} Hearts</h2>
             <p className="text-sm text-gray-500">
               This is a short description for the AI character
             </p>
@@ -46,7 +41,6 @@ const PaymentScreen: React.FC = () => {
           </div>
         </div>
 
-        {/* Feature List */}
         <div className="text-sm ml-10 space-y-2 text-gray-500">
           <p>Description Feature 1</p>
           <p>Description Feature 2</p>
@@ -54,16 +48,13 @@ const PaymentScreen: React.FC = () => {
           <p>Description Feature 4</p>
         </div>
 
-        {/* border-t border-gray-200 pt-3 */}
-        {/* Total Section */}
-        <div className="flex justify-between items-center text-black font-medium ">
+        <div className="flex justify-between items-center text-black font-medium">
           <span>Total</span>
           <span>{price}</span>
         </div>
       </div>
 
-      {/* Payment Details Section */}
-      <div className="bg-white w-full mb-20 rounded-lg shadow-md mt-4 ">
+      <div className="bg-white w-full mb-20 rounded-lg shadow-md mt-4">
         <button className="w-full flex justify-between items-center py-3 px-4 border-b border-gray-200 text-black">
           <span>Payment Method</span>
           <svg
@@ -81,26 +72,21 @@ const PaymentScreen: React.FC = () => {
             />
           </svg>
         </button>
-        <div className="py-3  px-4 text-black flex justify-between">
+        <div className="py-3 px-4 text-black flex justify-between">
           <span>Name</span>
           <span className="font-medium text-gray-600">LENNARD KLEIN</span>
         </div>
       </div>
 
-
-      {/* <div className="fixed bottom-0 left-0 right-0 bg-[#f2f2f2] border-t border-gray-200 py-2 px-3 w-full mx-auto pb-[env(safe-area-inset-bottom)] ">
-        <div className="pb-5">
-          <Link href="/explore">
-            <button className="flex mx-auto bg-[#007cff] items-center justify-center px-4 py-3 w-full text-white rounded-xl text-lg font-semibold">
-              Explore AI Characters
-            </button>
-          </Link>
-        </div>
-      </div> */}
-
-      <Button name='Explore AI Characters' href='/explore' />
+      <Button name="Explore AI Characters" href="/explore" />
     </div>
   );
 };
+
+const PaymentScreen: React.FC = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <PaymentDetails />
+  </Suspense>
+);
 
 export default PaymentScreen;
