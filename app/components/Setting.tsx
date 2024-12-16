@@ -16,7 +16,7 @@ const Settings: React.FC = () => {
             <div className="flex flex-row items-start hover:bg-gray-300 justify-between px-4 py-3">
               <h1 className="font-medium text-gray-900">Name</h1>
               <div className="flex items-center space-x-2">
-                <span className="text-gray-500">Lennard</span>
+                <input className="text-gray-500 text-end" placeholder="Lennard"/>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
