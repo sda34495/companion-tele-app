@@ -12,94 +12,111 @@ const Settings: React.FC = () => {
           <h3 className="text-sm ml-2 text-gray-500 font-medium mb-2 ">
             PROFILE DETAILS
           </h3>
-          <div className=" overflow-hidden rounded-lg  bg-white">
-            <div className="flex flex-row items-start hover:bg-gray-300 justify-between px-4 py-3">
-              <h1 className="font-medium text-gray-900">Name</h1>
-              <div className="flex items-center space-x-2">
-                <input className="text-gray-500 text-end" placeholder="Lennard"/>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="size-5 text-[#787878]"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </div>
-            </div>
-            <hr className="border- border-gray-200 mx-4" />
+          <div className="overflow-hidden rounded-lg bg-white">
+  {/* Name Field */}
+  <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+    <h1 className="font-medium text-gray-900">Name</h1>
+    <div className="flex items-center space-x-2 w-2/3">
+      <input
+        className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
+        placeholder="Lennard"
+      />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        className="w-5 h-5 text-[#787878]"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </div>
+  </div>
+  <hr className="border-gray-200 mx-4" />
 
-            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
-              <h1 className="  font-medium text-gray-900">Gender</h1>
-              <div className="flex items-center space-x-2">
-                <span className="text-gray-500">Male</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="size-5 text-[#787878]"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </div>
-            </div>
-            <hr className="border- border-gray-200 mx-4" />
+  {/* Gender Field */}
+  <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+    <h1 className="font-medium text-gray-900">Gender</h1>
+    <div className="flex items-center space-x-2 w-2/3">
+      <input
+        className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
+        placeholder="Male"
+      />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        className="w-5 h-5 text-[#787878]"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </div>
+  </div>
+  <hr className="border-gray-200 mx-4" />
 
-            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
-              <h1 className="  font-medium text-gray-900">Email </h1>
-              <div className="flex items-center space-x-2">
-                <span className="text-gray-500 ">mail@gmail.com</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="size-5 text-[#787878]"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </div>
-            </div>
-            <hr className="border- border-gray-200 mx-4" />
+  {/* Email Field */}
+  <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+    <h1 className="font-medium text-gray-900">Email</h1>
+    <div className="flex items-center space-x-2 w-2/3">
+      <input
+        className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
+        placeholder="mail@gmail.com"
+      />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        className="w-5 h-5 text-[#787878]"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </div>
+  </div>
+  <hr className="border-gray-200 mx-4" />
 
-            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
-              <h1 className=" font-medium text-gray-900">Language </h1>
-              <div className="flex items-center space-x-2">
-                <span className="text-gray-500 self-end ">English</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="size-5 text-[#787878]"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
+  {/* Language Field */}
+  <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+    <h1 className="font-medium text-gray-900">Language</h1>
+    <div className="flex items-center space-x-2 w-2/3">
+      <input
+        className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
+        placeholder="English"
+      />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        className="w-5 h-5 text-[#787878]"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+
         </div>
 
         <hr className="mt-5 border-gray-300" />
