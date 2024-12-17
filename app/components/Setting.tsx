@@ -173,7 +173,11 @@ const Settings: React.FC = () => {
 
             <hr className="border- border-gray-200 mx-4" />
 
-            <Link href='https://www.cloud-companions.com/legal/privacy-policy'>
+            <a href=" https://www.cloud-companions.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">
+
+
+
+            {/* <Link href='https://www.cloud-companions.com/legal/privacy-policy'> */}
             {/* <Link href=''> */}
             <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Privacy Policy
@@ -184,19 +188,21 @@ const Settings: React.FC = () => {
                 strokeWidth="1.5"
                 stroke="currentColor"
                 className="size-5 text-[#787878]"
-              >
+                >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                />
+                  />
               </svg>
             </button>
-            </Link>
+            {/* </Link> */}
+                  </a>
 
 
             <hr className="border- border-gray-200 mx-4" />
 
+<a href="https://www.cloud-companions.com/legal/terms-of-use" target="_blank" rel="noopener noreferrer">
 
             <Link href='https://www.cloud-companions.com/legal/terms-of-use'>
             {/* <Link href=''> */}
@@ -209,7 +215,7 @@ const Settings: React.FC = () => {
                 strokeWidth="1.5"
                 stroke="currentColor"
                 className="size-5 text-[#787878]"
-              >
+                >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -219,6 +225,7 @@ const Settings: React.FC = () => {
             </button>
                   </Link>
 
+                  </a>
 
             <hr className="border- border-gray-200 mx-4" />
 
