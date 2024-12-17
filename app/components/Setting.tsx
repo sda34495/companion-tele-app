@@ -13,110 +13,109 @@ const Settings: React.FC = () => {
             PROFILE DETAILS
           </h3>
           <div className="overflow-hidden rounded-lg bg-white">
-  {/* Name Field */}
-  <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
-    <h1 className="font-medium text-gray-900">Name</h1>
-    <div className="flex items-center space-x-2 w-2/3">
-      <input
-        className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
-        placeholder="Lennard"
-      />
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className="w-5 h-5 text-[#787878]"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m8.25 4.5 7.5 7.5-7.5 7.5"
-        />
-      </svg>
-    </div>
-  </div>
-  <hr className="border-gray-200 mx-4" />
+            {/* Name Field */}
+            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+              <h1 className="font-medium text-gray-900">Name</h1>
+              <div className="flex items-center space-x-2 w-2/3">
+                <input
+                  className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
+                  placeholder="Lennard"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 text-[#787878]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="border-gray-200 mx-4" />
 
-  {/* Gender Field */}
-  <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
-    <h1 className="font-medium text-gray-900">Gender</h1>
-    <div className="flex items-center space-x-2 w-2/3">
-      <input
-        className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
-        placeholder="Male"
-      />
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className="w-5 h-5 text-[#787878]"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m8.25 4.5 7.5 7.5-7.5 7.5"
-        />
-      </svg>
-    </div>
-  </div>
-  <hr className="border-gray-200 mx-4" />
+            {/* Gender Field */}
+            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+              <h1 className="font-medium text-gray-900">Gender</h1>
+              <div className="flex items-center space-x-2 w-2/3">
+                <input
+                  className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
+                  placeholder="Male"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 text-[#787878]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="border-gray-200 mx-4" />
 
-  {/* Email Field */}
-  <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
-    <h1 className="font-medium text-gray-900">Email</h1>
-    <div className="flex items-center space-x-2 w-2/3">
-      <input
-        className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
-        placeholder="mail@gmail.com"
-      />
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className="w-5 h-5 text-[#787878]"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m8.25 4.5 7.5 7.5-7.5 7.5"
-        />
-      </svg>
-    </div>
-  </div>
-  <hr className="border-gray-200 mx-4" />
+            {/* Email Field */}
+            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+              <h1 className="font-medium text-gray-900">Email</h1>
+              <div className="flex items-center space-x-2 w-2/3">
+                <input
+                  className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
+                  placeholder="mail@gmail.com"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 text-[#787878]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="border-gray-200 mx-4" />
 
-  {/* Language Field */}
-  <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
-    <h1 className="font-medium text-gray-900">Language</h1>
-    <div className="flex items-center space-x-2 w-2/3">
-      <input
-        className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
-        placeholder="English"
-      />
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className="w-5 h-5 text-[#787878]"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m8.25 4.5 7.5 7.5-7.5 7.5"
-        />
-      </svg>
-    </div>
-  </div>
-</div>
-
+            {/* Language Field */}
+            <div className="flex flex-row items-center hover:bg-gray-300 justify-between px-4 py-3">
+              <h1 className="font-medium text-gray-900">Language</h1>
+              <div className="flex items-center space-x-2 w-2/3">
+                <input
+                  className="w-full text-gray-500 text-end focus:outline-none bg-transparent placeholder-gray-500"
+                  placeholder="English"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 text-[#787878]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
 
         <hr className="mt-5 border-gray-300" />
@@ -148,11 +147,38 @@ const Settings: React.FC = () => {
             HELP & LEGAL
           </h3>
           <div className=" overflow-hidden rounded-lg bg-white ">
+            <a href="https://www.cloud-companions.com/legal/imprint" target="_blank"
+              rel="noopener noreferrer">
 
-            <Link href="https://www.cloud-companions.com/legal/imprint">
-            {/* <Link href=""> */}
               <button className="flex hover:bg-gray-300 items-center justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
                 Imprint
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="size-5 text-[#787878]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                </svg>
+              </button>
+                    </a>
+
+            <hr className="border- border-gray-200 mx-4" />
+
+            <a
+              href=" https://www.cloud-companions.com/legal/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             
+              <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+                Privacy Policy
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -168,87 +194,59 @@ const Settings: React.FC = () => {
                   />
                 </svg>
               </button>
-            </Link>
-
-
-            <hr className="border- border-gray-200 mx-4" />
-
-            <a href=" https://www.cloud-companions.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">
-
-
-
-            {/* <Link href='https://www.cloud-companions.com/legal/privacy-policy'> */}
-            {/* <Link href=''> */}
-            <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
-              Privacy Policy
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-5 text-[#787878]"
-                >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                  />
-              </svg>
-            </button>
-            {/* </Link> */}
-                  </a>
-
+            </a>
 
             <hr className="border- border-gray-200 mx-4" />
 
-<a href="https://www.cloud-companions.com/legal/terms-of-use" target="_blank" rel="noopener noreferrer">
-
-            <Link href='https://www.cloud-companions.com/legal/terms-of-use'>
-            {/* <Link href=''> */}
-            <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
-              Terms of Use
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-5 text-[#787878]"
-                >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                  />
-              </svg>
-            </button>
-                  </Link>
-
-                  </a>
+            <a
+              href="https://www.cloud-companions.com/legal/terms-of-use"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+                <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+                  Terms of Use
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="size-5 text-[#787878]"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                </button>
+            </a>
 
             <hr className="border- border-gray-200 mx-4" />
 
-            <a href="https://t.me/lennardklein" target="_blank" rel="noopener noreferrer">
-            {/* <Link href=''> */}
-            <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
-              Contact Support
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-5 text-[#787878]"
+            <a
+              href="https://t.me/lennardklein"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
+                Contact Support
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="size-5 text-[#787878]"
                 >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                   />
-              </svg>
-            </button>
-                  </a>
+                </svg>
+              </button>
+            </a>
           </div>
         </div>
 
