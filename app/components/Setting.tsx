@@ -222,7 +222,7 @@ const Settings: React.FC = () => {
 
             <hr className="border- border-gray-200 mx-4" />
 
-            <Link href='https://t.me/lennardklein'>
+            <a href="https://t.me/lennardklein" target="_blank" rel="noopener noreferrer">
             {/* <Link href=''> */}
             <button className="flex items-center hover:bg-gray-300 justify-between w-full px-4 py-3  font-medium text-left text-gray-900">
               Contact Support
@@ -241,7 +241,7 @@ const Settings: React.FC = () => {
                   />
               </svg>
             </button>
-                  </Link>
+                  </a>
           </div>
         </div>
 
