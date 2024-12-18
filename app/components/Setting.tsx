@@ -126,7 +126,7 @@ const Settings: React.FC = () => {
             CHAT SETTINGS
           </h3>
           <div className="flex hover:bg-gray-300 items-center justify-between px-4 py-3 border border-gray-200 rounded-lg bg-white">
-            <span className=" text-gray-900">Notifications</span>
+            <span className=" text-gray-900 font-bold">Notifications</span>
             <label className="relative inline-flex items-center cursor-pointer">
               <input type="checkbox" value="" className="sr-only peer" />
               <div className="w-11 h-6 bg-gray-200 hover:bg-gray-300 peer-focus:outline-0 peer-focus:ring-transparent rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-500"></div>

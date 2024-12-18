@@ -15,10 +15,10 @@ const HeartsPricing: React.FC = () => {
   return (
     <div className="bg-[#efeff3] relative w-full sm:max-w-xs mx-auto flex-grow py-6 px-4">
       <div className="flex flex-col items-center mb-6">
-        <div className="rounded-full w-24 p-3">
+        <div className="rounded-full w-24 p-3 mt-6">
           <Image src={mainHeart} alt="header image" priority />
         </div>
-        <p className="text-3xl font-bold mt-2">200</p>
+        <p className="text-3xl font-bold ">200</p>
         <p className="text-gray-500">Current Balance</p>
       </div>
 
